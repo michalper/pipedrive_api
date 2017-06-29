@@ -1,0 +1,36 @@
+{
+  "name": "michalper/pipedrive_api",
+  "description": "Unofficial Pipedrive REST API v1 Library",
+  "homepage": "https://github.com/michalper/pipedrive_api",
+  "license": "GNU",
+  "authors": [
+    {
+      "name": "Michał Per",
+      "email": "michal.per@encja.com",
+      "homepage": "https://github.com/michalper",
+      "role": "Head Integration Developer"
+    }
+  ],
+  "support": {
+    "email": "michal.per@encja.com"
+  },
+  "keywords": [
+    "pipedrive"
+  ],
+  "require": {
+    "itav/serializer": "^1.3",
+    "michalper/tools": "^0.1.0",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "require-dev": {
+  },
+  "type": "library",
+  "autoload": {
+    "psr-0": {
+      "PipedriveClient": "lib/"
+    },
+    "psr-4": {
+      "PipedriveClient\\": "lib/PipedriveClient/"
+    }
+  }
+}
