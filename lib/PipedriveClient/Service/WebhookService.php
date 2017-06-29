@@ -2,8 +2,9 @@
 
 namespace PipedriveClient\Service;
 
-use PipedriveClient\Model\WebhookModel;
 use Itav\Component\Serializer\Serializer;
+use PipedriveClient\Model\Request\WebhookRequest;
+use PipedriveClient\Model\Response\WebhookResponse;
 
 /**
  * Class WebhookService
@@ -11,7 +12,6 @@ use Itav\Component\Serializer\Serializer;
  */
 class WebhookService implements InterfaceService
 {
-
     /**
      * @var Service
      */
@@ -23,7 +23,7 @@ class WebhookService implements InterfaceService
     private $serializer;
 
     /**
-     * ContactService constructor.
+     * PersonService constructor.
      * @param Service $service
      * @param Serializer $serializer
      */
@@ -35,7 +35,7 @@ class WebhookService implements InterfaceService
 
     /**
      * @see https://developers.pipedrive.com/docs/api/v1/#!/Webhooks/get_webhooks
-     * @return WebhookModel[]|false
+     * @return WebhookResponse[]|false
      * @throws \Exception
      */
     public function get()
@@ -45,17 +45,18 @@ class WebhookService implements InterfaceService
             ->request('webhooks');
 
         if ($ret->getData()) {
-            return $this->serializer->denormalize($ret->getData(), WebhookModel::class . '[]');
+            return $this->serializer->denormalize($ret->getData(), WebhookResponse::class . '[]');
         }
         return false;
     }
 
     /**
-     * @param WebhookModel $webhook
-     * @return bool|WebhookModel
+     * @param WebhookRequest $webhook
+     * @return bool|WebhookResponse
      * @throws \Exception
+     * @see https://developers.pipedrive.com/docs/api/v1/#!/Webhooks/post_webhooks
      */
-    public function create(WebhookModel $webhook)
+    public function create(WebhookRequest $webhook)
     {
         $ret = $this->service
             ->setRequestMethod(Service::REQUEST_METHOD_POST)
@@ -63,7 +64,7 @@ class WebhookService implements InterfaceService
             ->request('webhooks');
 
         if ($ret->getData()) {
-            return $this->serializer->denormalize($ret->getData(), WebhookModel::class);
+            return $this->serializer->denormalize($ret->getData(), WebhookResponse::class);
         }
         return false;
     }
@@ -71,6 +72,7 @@ class WebhookService implements InterfaceService
     /**
      * @param integer $idWebhook
      * @return bool
+     * @see https://developers.pipedrive.com/docs/api/v1/#!/Webhooks/delete_webhooks_id
      */
     public function delete($idWebhook)
     {

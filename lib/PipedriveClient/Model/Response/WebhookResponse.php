@@ -1,12 +1,12 @@
 <?php
 
-namespace PipedriveClient\Model;
+namespace PipedriveClient\Model\Response;
 
 /**
  * Class WebhookModel
  * @package PipedriveClient\Model
  */
-class WebhookModel
+class WebhookResponse
 {
     /**
      * @var integer
@@ -88,7 +88,7 @@ class WebhookModel
 
     /**
      * @param int $id
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setId($id)
     {
@@ -106,7 +106,7 @@ class WebhookModel
 
     /**
      * @param int $companyId
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setCompanyId($companyId)
     {
@@ -124,7 +124,7 @@ class WebhookModel
 
     /**
      * @param int $adminId
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setAdminId($adminId)
     {
@@ -142,7 +142,7 @@ class WebhookModel
 
     /**
      * @param int $userId
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setUserId($userId)
     {
@@ -160,7 +160,7 @@ class WebhookModel
 
     /**
      * @param string $eventAction
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setEventAction($eventAction)
     {
@@ -178,7 +178,7 @@ class WebhookModel
 
     /**
      * @param string $eventObject
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setEventObject($eventObject)
     {
@@ -196,7 +196,7 @@ class WebhookModel
 
     /**
      * @param string $subscriptionUrl
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setSubscriptionUrl($subscriptionUrl)
     {
@@ -214,7 +214,7 @@ class WebhookModel
 
     /**
      * @param bool $isActive
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setIsActive($isActive)
     {
@@ -232,7 +232,7 @@ class WebhookModel
 
     /**
      * @param \DateTime $addTime
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setAddTime($addTime)
     {
@@ -250,7 +250,7 @@ class WebhookModel
 
     /**
      * @param \DateTime $removeTime
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setRemoveTime($removeTime)
     {
@@ -268,7 +268,7 @@ class WebhookModel
 
     /**
      * @param string $httpAuthUser
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setHttpAuthUser($httpAuthUser)
     {
@@ -286,7 +286,7 @@ class WebhookModel
 
     /**
      * @param string $httpAuthPassword
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setHttpAuthPassword($httpAuthPassword)
     {
@@ -304,7 +304,7 @@ class WebhookModel
 
     /**
      * @param \DateTime $lastDeliveryTime
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setLastDeliveryTime($lastDeliveryTime)
     {
@@ -322,7 +322,7 @@ class WebhookModel
 
     /**
      * @param string $lastHttpStatus
-     * @return WebhookModel
+     * @return WebhookResponse
      */
     public function setLastHttpStatus($lastHttpStatus)
     {

@@ -2,7 +2,7 @@
 
 namespace PipedriveClient;
 
-use PipedriveClient\Service\ContactService;
+use PipedriveClient\Service\PersonService;
 use PipedriveClient\Service\Service;
 use PipedriveClient\Service\WebhookService;
 use Itav\Component\Serializer\Serializer;
@@ -25,14 +25,14 @@ class PipedriveClient
     private $serializer;
 
     /**
-     * @var ContactService
+     * @var PersonService
      */
-    public $contact;
+    public $persons;
 
     /**
      * @var WebhookService
      */
-    public $webhook;
+    public $webhooks;
 
     /**
      * PipedriveClient constructor.
@@ -41,8 +41,8 @@ class PipedriveClient
     {
         $this->serializer = new Serializer();
         $this->service = new Service($this->serializer);
-        $this->contact = new ContactService($this->service, $this->serializer);
-        $this->webhook = new WebhookService($this->service, $this->serializer);
+        $this->persons = new PersonService($this->service, $this->serializer);
+        $this->webhooks = new WebhookService($this->service, $this->serializer);
     }
 
     /**
