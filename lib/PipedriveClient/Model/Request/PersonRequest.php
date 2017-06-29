@@ -15,6 +15,16 @@ class PersonRequest
     private $name;
 
     /**
+     * @var string
+     */
+    private $lastName;
+
+    /**
+     * @var string
+     */
+    private $firstName;
+
+    /**
      * @var integer
      */
     private $ownerId;
@@ -167,6 +177,42 @@ class PersonRequest
     public function setAddTime($addTime)
     {
         $this->addTime = $addTime;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+
+    /**
+     * @param mixed $lastName
+     * @return PersonRequest
+     */
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+
+    /**
+     * @param string $firstName
+     * @return PersonRequest
+     */
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
         return $this;
     }
 }
