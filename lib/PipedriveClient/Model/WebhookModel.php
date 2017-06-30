@@ -10,6 +10,29 @@ use PipedriveClient\Model\Nested\WebhookMeta;
  */
 class WebhookModel
 {
+
+    /**
+     * EVENT ACTION
+     */
+    const EVENT_ACTION_ADDED = 'added';
+    const EVENT_ACTION_UPDATED = 'updated';
+    const EVENT_ACTION_MERGED = 'merged';
+    const EVENT_ACTION_DELETED = 'deleted';
+
+    /**
+     * EVENT OBJECT
+     */
+    const EVENT_OBJECT_ACTIVITY = 'activity';
+    const EVENT_OBJECT_ACTIVITY_TYPE = 'activityType';
+    const EVENT_OBJECT_DEAL = 'deal';
+    const EVENT_OBJECT_NOTE = 'note';
+    const EVENT_OBJECT_ORGANIZATION = 'organization';
+    const EVENT_OBJECT_PERSON = 'person';
+    const EVENT_OBJECT_PIPELINE = 'pipeline';
+    const EVENT_OBJECT_PRODUCT = 'product';
+    const EVENT_OBJECT_STAGE = 'stage';
+    const EVENT_OBJECT_USER = 'user';
+
     /**
      * @var integer
      */
