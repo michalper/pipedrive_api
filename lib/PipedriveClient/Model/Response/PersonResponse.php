@@ -143,12 +143,12 @@ class PersonResponse
     private $activeFlag;
 
     /**
-     * @var Email[]
+     * @var \PipedriveClient\Model\Nested\Email[]
      */
     private $email;
 
     /**
-     * @var Phone[]
+     * @var \PipedriveClient\Model\Nested\Phone[]
      */
     private $phone;
 
