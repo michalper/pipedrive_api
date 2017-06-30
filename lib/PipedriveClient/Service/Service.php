@@ -162,7 +162,7 @@ class Service
     {
         $params = '';
         if ($this->getParams) {
-            $params = http_build_query($this->getParams);
+            $params = '&' . http_build_query($this->getParams);
         }
 
         if (!$this->domain) {

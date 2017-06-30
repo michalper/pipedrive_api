@@ -5,6 +5,7 @@ namespace PipedriveClient\Service;
 use PipedriveClient\Model\Request\PersonRequest;
 use Itav\Component\Serializer\Serializer;
 use PipedriveClient\Model\Response\PersonResponse;
+use PipedriveClient\Model\SearchModel;
 
 /**
  * Class PersonService
@@ -95,5 +96,22 @@ class PersonService implements InterfaceService
             return true;
         }
         return false;
+    }
+
+    /**
+     * @param SearchModel $searchModel
+     * @return PersonResponse[]
+     */
+    public function search(SearchModel $searchModel)
+    {
+        $ret = $this->service
+            ->setRequestMethod(Service::REQUEST_METHOD_GET)
+            ->setGetParams($this->serializer->normalize($searchModel))
+            ->request('persons');
+
+        if ($ret->getData()) {
+            return $this->serializer->denormalize($ret->getData(), PersonResponse::class . '[]');
+        }
+        return [];
     }
 }
