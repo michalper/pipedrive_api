@@ -2,6 +2,8 @@
 
 namespace PipedriveClient;
 
+use PipedriveClient\Service\DealService;
+use PipedriveClient\Service\NoteService;
 use PipedriveClient\Service\PersonService;
 use PipedriveClient\Service\PipelineService;
 use PipedriveClient\Service\Service;
@@ -15,6 +17,16 @@ use Itav\Component\Serializer\Serializer;
  */
 class PipedriveClient
 {
+
+    /**
+     * @var DealService
+     */
+    public $deals;
+
+    /**
+     * @var NoteService
+     */
+    public $notes;
 
     /**
      * @var Service
@@ -53,6 +65,8 @@ class PipedriveClient
     {
         $this->serializer = new Serializer();
         $this->service = new Service($this->serializer);
+        $this->deals = new DealService($this->service, $this->serializer);
+        $this->notes = new NoteService($this->service, $this->serializer);
         $this->persons = new PersonService($this->service, $this->serializer);
         $this->pipelines = new PipelineService($this->service, $this->serializer);
         $this->stages = new StageService($this->service, $this->serializer);
