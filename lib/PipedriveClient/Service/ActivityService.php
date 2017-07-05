@@ -4,6 +4,7 @@ namespace PipedriveClient\Service;
 
 use PipedriveClient\Model\ActivityModel;
 use Itav\Component\Serializer\Serializer;
+use PipedriveClient\Model\SearchModel;
 
 /**
  * Class ActivityService
@@ -48,5 +49,23 @@ class ActivityService implements InterfaceService
             return $this->serializer->denormalize($ret->getData(), ActivityModel::class);
         }
         return false;
+    }
+
+    /**
+     * @see https://developers.pipedrive.com/docs/api/v1/#!/Activities/get_activities
+     * @param SearchModel $searchModel
+     * @return ActivityModel[]
+     */
+    public function search(SearchModel $searchModel)
+    {
+        $ret = $this->service
+            ->setRequestMethod(Service::REQUEST_METHOD_GET)
+            ->setGetParams($this->serializer->normalize($searchModel))
+            ->request('activities');
+
+        if ($ret->getData()) {
+            return $this->serializer->denormalize($ret->getData(), ActivityModel::class . '[]');
+        }
+        return [];
     }
 }
