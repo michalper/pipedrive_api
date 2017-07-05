@@ -51,4 +51,22 @@ class DealService implements InterfaceService
         return [];
     }
 
+    /**
+     * @param DealModel $dealModel
+     * @see https://developers.pipedrive.com/docs/api/v1/#!/Deals/post_deals
+     * @return boolean|DealModel
+     */
+    public function add(DealModel $dealModel)
+    {
+        $ret = $this->service
+            ->setRequestMethod(Service::REQUEST_METHOD_POST)
+            ->setGetParams($this->serializer->normalize($dealModel))
+            ->request('deals');
+
+        if ($ret->getData()) {
+            return $this->serializer->denormalize($ret->getData(), DealModel::class);
+        }
+        return false;
+    }
+
 }
