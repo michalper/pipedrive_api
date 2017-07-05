@@ -8,6 +8,7 @@ use PipedriveClient\Service\PersonService;
 use PipedriveClient\Service\PipelineService;
 use PipedriveClient\Service\Service;
 use PipedriveClient\Service\StageService;
+use PipedriveClient\Service\UserSettingsService;
 use PipedriveClient\Service\WebhookService;
 use Itav\Component\Serializer\Serializer;
 
@@ -54,6 +55,11 @@ class PipedriveClient
     public $stages;
 
     /**
+     * @var UserSettingsService
+     */
+    public $userSettings;
+
+    /**
      * @var WebhookService
      */
     public $webhooks;
@@ -70,6 +76,7 @@ class PipedriveClient
         $this->persons = new PersonService($this->service, $this->serializer);
         $this->pipelines = new PipelineService($this->service, $this->serializer);
         $this->stages = new StageService($this->service, $this->serializer);
+        $this->userSettings = new UserSettingsService($this->service, $this->serializer);
         $this->webhooks = new WebhookService($this->service, $this->serializer);
     }
 
