@@ -23,7 +23,7 @@ class PipedriveClient
     /**
      * @var ActivityService
      */
-    public $activity;
+    public $activities;
 
     /**
      * @var DealService
@@ -77,7 +77,7 @@ class PipedriveClient
     {
         $this->serializer = new Serializer();
         $this->service = new Service($this->serializer);
-        $this->deals = new ActivityService($this->service, $this->serializer);
+        $this->activities = new ActivityService($this->service, $this->serializer);
         $this->deals = new DealService($this->service, $this->serializer);
         $this->notes = new NoteService($this->service, $this->serializer);
         $this->persons = new PersonService($this->service, $this->serializer);
