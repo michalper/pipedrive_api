@@ -43,7 +43,7 @@ class PersonService implements InterfaceService
     {
         $ret = $this->service
             ->setRequestMethod(Service::REQUEST_METHOD_POST)
-            ->setPostData($this->serializer->normalize($personRequest))
+            ->setPostData(json_decode(json_encode($personRequest), true))
             ->request('persons');
 
         if ($ret->getData()) {
@@ -67,7 +67,7 @@ class PersonService implements InterfaceService
 
         $ret = $this->service
             ->setRequestMethod(Service::REQUEST_METHOD_PUT)
-            ->setPostData($this->serializer->normalize($personRequest))
+            ->setPostData(json_decode(json_encode($personRequest), true))
             ->request('persons/' . $idPerson);
 
         if ($ret->getData()) {
