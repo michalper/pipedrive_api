@@ -41,6 +41,11 @@ class Service
     /**
      * @var array
      */
+    private $dynamicData = [];
+
+    /**
+     * @var array
+     */
     private $getParams = [];
 
     /**
@@ -154,6 +159,24 @@ class Service
     }
 
     /**
+     * @return array
+     */
+    public function getDynamicData()
+    {
+        return $this->dynamicData;
+    }
+
+    /**
+     * @param array $dynamicData
+     * @return Service
+     */
+    public function setDynamicData($dynamicData)
+    {
+        $this->dynamicData = $dynamicData;
+        return $this;
+    }
+
+    /**
      * @param string|bool $url
      * @return ResponseModel
      * @throws \Exception
@@ -179,6 +202,9 @@ class Service
             throw new \Exception('URL is missing.');
         }
 
+        if ($this->dynamicData) {
+            $this->postData = array_merge($this->postData, $this->dynamicData);
+        }
 
         $url = 'https://' . $this->domain . self::URL . self::VERSION . '/' . $url . $apiKey . $params;
 
