@@ -109,8 +109,16 @@ class PersonService implements InterfaceService
             ->setGetParams($this->serializer->normalize($searchModel))
             ->request('persons');
 
-        if ($ret->getData()) {
-            return $this->serializer->denormalize($ret->getData(), PersonResponse::class . '[]');
+        if ($persons = $ret->getData()) {
+            $ret = [];
+            foreach ($persons as $key => $person) {
+                $test = new PersonResponse();
+                foreach ($person as $k => $v) {
+                    $test->addProp($k, $v);
+                }
+                $ret[$key] = $test;
+            }
+            return $ret;
         }
         return [];
     }

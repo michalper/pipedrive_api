@@ -215,4 +215,27 @@ class PersonRequest
         $this->firstName = $firstName;
         return $this;
     }
+
+    /**
+     * @param string $key
+     * @param string $value
+     * @return PersonRequest
+     */
+    public function addProp($key, $value)
+    {
+        $this->$key = $value;
+        return $this;
+    }
+
+    /**
+     * @param string $key
+     * @return mixed
+     */
+    public function getProp($key)
+    {
+        if (isset($this->$key)) {
+            return $this->$key;
+        }
+        return false;
+    }
 }

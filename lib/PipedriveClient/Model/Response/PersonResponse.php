@@ -1000,4 +1000,27 @@ class PersonResponse
         $this->ownerName = $ownerName;
         return $this;
     }
+
+    /**
+     * @param string $key
+     * @param string $value
+     * @return PersonResponse
+     */
+    public function addProp($key, $value)
+    {
+        $this->$key = $value;
+        return $this;
+    }
+
+    /**
+     * @param string $key
+     * @return mixed
+     */
+    public function getProp($key)
+    {
+        if (isset($this->$key)) {
+            return $this->$key;
+        }
+        return false;
+    }
 }
