@@ -20,17 +20,17 @@ class PersonResponse
     /**
      * @var integer
      */
-    private $companyId;
+    private $company_id;
 
     /**
      * @var @TODO
      */
-    private $ownerId;
+    private $owner_id;
 
     /**
      * @var integer
      */
-    private $orgId;
+    private $org_id;
 
     /**
      * @var string
@@ -40,107 +40,107 @@ class PersonResponse
     /**
      * @var string
      */
-    private $firstName;
+    private $first_name;
 
     /**
      * @var string
      */
-    private $lastName;
+    private $last_name;
 
     /**
      * @var integer
      */
-    private $openDealsCount;
+    private $open_deals_count;
 
     /**
      * @var integer
      */
-    private $relatedOpenDealsCount;
+    private $related_open_deals_count;
 
     /**
      * @var integer
      */
-    private $closedDealsCount;
+    private $closed_deals_count;
 
     /**
      * @var integer
      */
-    private $relatedClosedDealsCount;
+    private $related_closed_deals_count;
 
     /**
      * @var integer
      */
-    private $participantOpenDealsCount;
+    private $participant_open_deals_count;
 
     /**
      * @var integer
      */
-    private $participantClosedDealsCount;
+    private $participant_closed_deals_count;
 
     /**
      * @var integer
      */
-    private $emailMessagesCount;
+    private $email_messages_count;
 
     /**
      * @var integer
      */
-    private $activitiesCount;
+    private $activities_count;
 
     /**
      * @var integer
      */
-    private $doneActivitiesCount;
+    private $done_activities_count;
 
     /**
      * @var integer
      */
-    private $undoneActivitiesCount;
+    private $undone_activities_count;
 
     /**
      * @var integer
      */
-    private $referenceActivitiesCount;
+    private $reference_activities_count;
 
     /**
      * @var integer
      */
-    private $filesCount;
+    private $files_count;
 
     /**
      * @var integer
      */
-    private $notesCount;
+    private $notes_count;
 
     /**
      * @var integer
      */
-    private $followersCount;
+    private $followers_count;
 
     /**
      * @var integer
      */
-    private $wonDealsCount;
+    private $won_deals_count;
 
     /**
      * @var integer
      */
-    private $relatedWonDealsCount;
+    private $related_won_deals_count;
 
     /**
      * @var integer
      */
-    private $lostDealsCount;
+    private $lost_deals_count;
 
     /**
      * @var integer
      */
-    private $relatedLostDealsCount;
+    private $related_lost_deals_count;
 
     /**
      * @var boolean
      */
-    private $activeFlag;
+    private $active_flag;
 
     /**
      * @var \PipedriveClient\Model\Nested\Email[]
@@ -155,77 +155,77 @@ class PersonResponse
     /**
      * @var string
      */
-    private $firstChar;
+    private $first_char;
 
     /**
      * @var \DateTime
      */
-    private $addTime;
+    private $add_time;
 
     /**
      * @var \DateTime
      */
-    private $updateTime;
+    private $update_time;
 
     /**
      * @var integer
      */
-    private $visibleTo;
+    private $visible_to;
 
     /**
      * @var string
      */
-    private $pictureId;
+    private $picture_id;
 
     /**
      * @var \DateTime
      */
-    private $nextActivityDate;
+    private $next_activity_date;
 
     /**
      * @var string
      */
-    private $nextActivityTime;
+    private $next_activity_time;
 
     /**
      * @var string
      */
-    private $nextActivityId;
+    private $next_activity_id;
 
     /**
      * @var string
      */
-    private $lastActivityId;
+    private $last_activity_id;
 
     /**
      * @var \DateTime
      */
-    private $lastActivityDate;
+    private $last_activity_date;
 
     /**
      * @var string
      */
-    private $lastIncomingMailTime;
+    private $last_incoming_mail_time;
 
     /**
      * @var string
      */
-    private $lastOutgoingMailTime;
+    private $last_outgoing_mail_time;
 
     /**
      * @var string
      */
-    private $orgName;
+    private $org_name;
 
     /**
      * @var string
      */
-    private $ccEmail;
+    private $cc_email;
 
     /**
      * @var string
      */
-    private $ownerName;
+    private $owner_name;
 
     /**
      * @return int
@@ -250,16 +250,16 @@ class PersonResponse
      */
     public function getCompanyId()
     {
-        return $this->companyId;
+        return $this->company_id;
     }
 
     /**
-     * @param int $companyId
+     * @param int $company_id
      * @return PersonResponse
      */
-    public function setCompanyId($companyId)
+    public function setCompanyId($company_id)
     {
-        $this->companyId = $companyId;
+        $this->company_id = $company_id;
         return $this;
     }
 
@@ -268,16 +268,16 @@ class PersonResponse
      */
     public function getOwnerId()
     {
-        return $this->ownerId;
+        return $this->owner_id;
     }
 
     /**
-     * @param mixed $ownerId
+     * @param mixed $owner_id
      * @return PersonResponse
      */
-    public function setOwnerId($ownerId)
+    public function setOwnerId($owner_id)
     {
-        $this->ownerId = $ownerId;
+        $this->owner_id = $owner_id;
         return $this;
     }
 
@@ -286,16 +286,16 @@ class PersonResponse
      */
     public function getOrgId()
     {
-        return $this->orgId;
+        return $this->org_id;
     }
 
     /**
-     * @param int $orgId
+     * @param int $org_id
      * @return PersonResponse
      */
-    public function setOrgId($orgId)
+    public function setOrgId($org_id)
     {
-        $this->orgId = $orgId;
+        $this->org_id = $org_id;
         return $this;
     }
 
@@ -322,16 +322,16 @@ class PersonResponse
      */
     public function getFirstName()
     {
-        return $this->firstName;
+        return $this->first_name;
     }
 
     /**
-     * @param string $firstName
+     * @param string $first_name
      * @return PersonResponse
      */
-    public function setFirstName($firstName)
+    public function setFirstName($first_name)
     {
-        $this->firstName = $firstName;
+        $this->first_name = $first_name;
         return $this;
     }
 
@@ -340,142 +340,142 @@ class PersonResponse
      */
     public function getLastName()
     {
-        return $this->lastName;
+        return $this->last_name;
     }
 
     /**
-     * @param string $lastName
+     * @param string $last_name
      * @return PersonResponse
      */
-    public function setLastName($lastName)
+    public function setLastName($last_name)
     {
-        $this->lastName = $lastName;
+        $this->last_name = $last_name;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getOpenDealsCount()
+    public function getOpenDealscount()
     {
-        return $this->openDealsCount;
+        return $this->open_deals_count;
     }
 
     /**
-     * @param int $openDealsCount
+     * @param int $open_deals_count
      * @return PersonResponse
      */
-    public function setOpenDealsCount($openDealsCount)
+    public function setOpenDealscount($open_deals_count)
     {
-        $this->openDealsCount = $openDealsCount;
+        $this->open_deals_count = $open_deals_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getRelatedOpenDealsCount()
+    public function getRelatedOpendealscount()
     {
-        return $this->relatedOpenDealsCount;
+        return $this->related_open_deals_count;
     }
 
     /**
-     * @param int $relatedOpenDealsCount
+     * @param int $related_open_deals_count
      * @return PersonResponse
      */
-    public function setRelatedOpenDealsCount($relatedOpenDealsCount)
+    public function setRelatedOpendealscount($related_open_deals_count)
     {
-        $this->relatedOpenDealsCount = $relatedOpenDealsCount;
+        $this->related_open_deals_count = $related_open_deals_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getClosedDealsCount()
+    public function getClosedDealscount()
     {
-        return $this->closedDealsCount;
+        return $this->closed_deals_count;
     }
 
     /**
-     * @param int $closedDealsCount
+     * @param int $closed_deals_count
      * @return PersonResponse
      */
-    public function setClosedDealsCount($closedDealsCount)
+    public function setClosedDealscount($closed_deals_count)
     {
-        $this->closedDealsCount = $closedDealsCount;
+        $this->closed_deals_count = $closed_deals_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getRelatedClosedDealsCount()
+    public function getRelatedCloseddealscount()
     {
-        return $this->relatedClosedDealsCount;
+        return $this->related_closed_deals_count;
     }
 
     /**
-     * @param int $relatedClosedDealsCount
+     * @param int $related_closed_deals_count
      * @return PersonResponse
      */
-    public function setRelatedClosedDealsCount($relatedClosedDealsCount)
+    public function setRelatedCloseddealscount($related_closed_deals_count)
     {
-        $this->relatedClosedDealsCount = $relatedClosedDealsCount;
+        $this->related_closed_deals_count = $related_closed_deals_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getParticipantOpenDealsCount()
+    public function getParticipantOpendealscount()
     {
-        return $this->participantOpenDealsCount;
+        return $this->participant_open_deals_count;
     }
 
     /**
-     * @param int $participantOpenDealsCount
+     * @param int $participant_open_deals_count
      * @return PersonResponse
      */
-    public function setParticipantOpenDealsCount($participantOpenDealsCount)
+    public function setParticipantOpendealscount($participant_open_deals_count)
     {
-        $this->participantOpenDealsCount = $participantOpenDealsCount;
+        $this->participant_open_deals_count = $participant_open_deals_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getParticipantClosedDealsCount()
+    public function getParticipantCloseddealscount()
     {
-        return $this->participantClosedDealsCount;
+        return $this->participant_closed_deals_count;
     }
 
     /**
-     * @param int $participantClosedDealsCount
+     * @param int $participant_closed_deals_count
      * @return PersonResponse
      */
-    public function setParticipantClosedDealsCount($participantClosedDealsCount)
+    public function setParticipantCloseddealscount($participant_closed_deals_count)
     {
-        $this->participantClosedDealsCount = $participantClosedDealsCount;
+        $this->participant_closed_deals_count = $participant_closed_deals_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getEmailMessagesCount()
+    public function getEmailMessagescount()
     {
-        return $this->emailMessagesCount;
+        return $this->email_messages_count;
     }
 
     /**
-     * @param int $emailMessagesCount
+     * @param int $email_messages_count
      * @return PersonResponse
      */
-    public function setEmailMessagesCount($emailMessagesCount)
+    public function setEmailMessagescount($email_messages_count)
     {
-        $this->emailMessagesCount = $emailMessagesCount;
+        $this->email_messages_count = $email_messages_count;
         return $this;
     }
 
@@ -484,70 +484,70 @@ class PersonResponse
      */
     public function getActivitiesCount()
     {
-        return $this->activitiesCount;
+        return $this->activities_count;
     }
 
     /**
-     * @param int $activitiesCount
+     * @param int $activities_count
      * @return PersonResponse
      */
-    public function setActivitiesCount($activitiesCount)
+    public function setActivitiesCount($activities_count)
     {
-        $this->activitiesCount = $activitiesCount;
+        $this->activities_count = $activities_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getDoneActivitiesCount()
+    public function getDoneActivitiescount()
     {
-        return $this->doneActivitiesCount;
+        return $this->done_activities_count;
     }
 
     /**
-     * @param int $doneActivitiesCount
+     * @param int $done_activities_count
      * @return PersonResponse
      */
-    public function setDoneActivitiesCount($doneActivitiesCount)
+    public function setDoneActivitiescount($done_activities_count)
     {
-        $this->doneActivitiesCount = $doneActivitiesCount;
+        $this->done_activities_count = $done_activities_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getUndoneActivitiesCount()
+    public function getUndoneActivitiescount()
     {
-        return $this->undoneActivitiesCount;
+        return $this->undone_activities_count;
     }
 
     /**
-     * @param int $undoneActivitiesCount
+     * @param int $undone_activities_count
      * @return PersonResponse
      */
-    public function setUndoneActivitiesCount($undoneActivitiesCount)
+    public function setUndoneActivitiescount($undone_activities_count)
     {
-        $this->undoneActivitiesCount = $undoneActivitiesCount;
+        $this->undone_activities_count = $undone_activities_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getReferenceActivitiesCount()
+    public function getReferenceActivitiescount()
     {
-        return $this->referenceActivitiesCount;
+        return $this->reference_activities_count;
     }
 
     /**
-     * @param int $referenceActivitiesCount
+     * @param int $reference_activities_count
      * @return PersonResponse
      */
-    public function setReferenceActivitiesCount($referenceActivitiesCount)
+    public function setReferenceActivitiescount($reference_activities_count)
     {
-        $this->referenceActivitiesCount = $referenceActivitiesCount;
+        $this->reference_activities_count = $reference_activities_count;
         return $this;
     }
 
@@ -556,16 +556,16 @@ class PersonResponse
      */
     public function getFilesCount()
     {
-        return $this->filesCount;
+        return $this->files_count;
     }
 
     /**
-     * @param int $filesCount
+     * @param int $files_count
      * @return PersonResponse
      */
-    public function setFilesCount($filesCount)
+    public function setFilesCount($files_count)
     {
-        $this->filesCount = $filesCount;
+        $this->files_count = $files_count;
         return $this;
     }
 
@@ -574,16 +574,16 @@ class PersonResponse
      */
     public function getNotesCount()
     {
-        return $this->notesCount;
+        return $this->notes_count;
     }
 
     /**
-     * @param int $notesCount
+     * @param int $notes_count
      * @return PersonResponse
      */
-    public function setNotesCount($notesCount)
+    public function setNotesCount($notes_count)
     {
-        $this->notesCount = $notesCount;
+        $this->notes_count = $notes_count;
         return $this;
     }
 
@@ -592,88 +592,88 @@ class PersonResponse
      */
     public function getFollowersCount()
     {
-        return $this->followersCount;
+        return $this->followers_count;
     }
 
     /**
-     * @param int $followersCount
+     * @param int $followers_count
      * @return PersonResponse
      */
-    public function setFollowersCount($followersCount)
+    public function setFollowersCount($followers_count)
     {
-        $this->followersCount = $followersCount;
+        $this->followers_count = $followers_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getWonDealsCount()
+    public function getWonDealscount()
     {
-        return $this->wonDealsCount;
+        return $this->won_deals_count;
     }
 
     /**
-     * @param int $wonDealsCount
+     * @param int $won_deals_count
      * @return PersonResponse
      */
-    public function setWonDealsCount($wonDealsCount)
+    public function setWonDealscount($won_deals_count)
     {
-        $this->wonDealsCount = $wonDealsCount;
+        $this->won_deals_count = $won_deals_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getRelatedWonDealsCount()
+    public function getRelatedWondealscount()
     {
-        return $this->relatedWonDealsCount;
+        return $this->related_won_deals_count;
     }
 
     /**
-     * @param int $relatedWonDealsCount
+     * @param int $related_won_deals_count
      * @return PersonResponse
      */
-    public function setRelatedWonDealsCount($relatedWonDealsCount)
+    public function setRelatedWondealscount($related_won_deals_count)
     {
-        $this->relatedWonDealsCount = $relatedWonDealsCount;
+        $this->related_won_deals_count = $related_won_deals_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getLostDealsCount()
+    public function getLostDealscount()
     {
-        return $this->lostDealsCount;
+        return $this->lost_deals_count;
     }
 
     /**
-     * @param int $lostDealsCount
+     * @param int $lost_deals_count
      * @return PersonResponse
      */
-    public function setLostDealsCount($lostDealsCount)
+    public function setLostDealscount($lost_deals_count)
     {
-        $this->lostDealsCount = $lostDealsCount;
+        $this->lost_deals_count = $lost_deals_count;
         return $this;
     }
 
     /**
      * @return int
      */
-    public function getRelatedLostDealsCount()
+    public function getRelatedLostdealscount()
     {
-        return $this->relatedLostDealsCount;
+        return $this->related_lost_deals_count;
     }
 
     /**
-     * @param int $relatedLostDealsCount
+     * @param int $related_lost_deals_count
      * @return PersonResponse
      */
-    public function setRelatedLostDealsCount($relatedLostDealsCount)
+    public function setRelatedLostdealscount($related_lost_deals_count)
     {
-        $this->relatedLostDealsCount = $relatedLostDealsCount;
+        $this->related_lost_deals_count = $related_lost_deals_count;
         return $this;
     }
 
@@ -682,16 +682,16 @@ class PersonResponse
      */
     public function isActiveFlag()
     {
-        return $this->activeFlag;
+        return $this->active_flag;
     }
 
     /**
-     * @param bool $activeFlag
+     * @param bool $active_flag
      * @return PersonResponse
      */
-    public function setActiveFlag($activeFlag)
+    public function setActiveFlag($active_flag)
     {
-        $this->activeFlag = $activeFlag;
+        $this->active_flag = $active_flag;
         return $this;
     }
 
@@ -736,16 +736,16 @@ class PersonResponse
      */
     public function getFirstChar()
     {
-        return $this->firstChar;
+        return $this->first_char;
     }
 
     /**
-     * @param string $firstChar
+     * @param string $first_char
      * @return PersonResponse
      */
-    public function setFirstChar($firstChar)
+    public function setFirstChar($first_char)
     {
-        $this->firstChar = $firstChar;
+        $this->first_char = $first_char;
         return $this;
     }
 
@@ -754,16 +754,16 @@ class PersonResponse
      */
     public function getAddTime()
     {
-        return $this->addTime;
+        return $this->add_time;
     }
 
     /**
-     * @param \DateTime $addTime
+     * @param \DateTime $add_time
      * @return PersonResponse
      */
-    public function setAddTime($addTime)
+    public function setAddTime($add_time)
     {
-        $this->addTime = $addTime;
+        $this->add_time = $add_time;
         return $this;
     }
 
@@ -772,16 +772,16 @@ class PersonResponse
      */
     public function getUpdateTime()
     {
-        return $this->updateTime;
+        return $this->update_time;
     }
 
     /**
-     * @param \DateTime $updateTime
+     * @param \DateTime $update_time
      * @return PersonResponse
      */
-    public function setUpdateTime($updateTime)
+    public function setUpdateTime($update_time)
     {
-        $this->updateTime = $updateTime;
+        $this->update_time = $update_time;
         return $this;
     }
 
@@ -790,16 +790,16 @@ class PersonResponse
      */
     public function getVisibleTo()
     {
-        return $this->visibleTo;
+        return $this->visible_to;
     }
 
     /**
-     * @param int $visibleTo
+     * @param int $visible_to
      * @return PersonResponse
      */
-    public function setVisibleTo($visibleTo)
+    public function setVisibleTo($visible_to)
     {
-        $this->visibleTo = $visibleTo;
+        $this->visible_to = $visible_to;
         return $this;
     }
 
@@ -808,16 +808,16 @@ class PersonResponse
      */
     public function getPictureId()
     {
-        return $this->pictureId;
+        return $this->picture_id;
     }
 
     /**
-     * @param string $pictureId
+     * @param string $picture_id
      * @return PersonResponse
      */
-    public function setPictureId($pictureId)
+    public function setPictureId($picture_id)
     {
-        $this->pictureId = $pictureId;
+        $this->picture_id = $picture_id;
         return $this;
     }
 
@@ -826,7 +826,7 @@ class PersonResponse
      */
     public function getNextActivityDate()
     {
-        return $this->nextActivityDate;
+        return $this->next_activity_date;
     }
 
     /**
@@ -835,115 +835,115 @@ class PersonResponse
      */
     public function setNextActivityDate($nextActivityDate)
     {
-        $this->nextActivityDate = $nextActivityDate;
+        $this->next_activity_date = $nextActivityDate;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getNextActivityTime()
+    public function getNextActivitytime()
     {
-        return $this->nextActivityTime;
+        return $this->next_activity_time;
     }
 
     /**
-     * @param string $nextActivityTime
+     * @param string $next_activity_time
      * @return PersonResponse
      */
-    public function setNextActivityTime($nextActivityTime)
+    public function setNextActivitytime($next_activity_time)
     {
-        $this->nextActivityTime = $nextActivityTime;
+        $this->next_activity_time = $next_activity_time;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getNextActivityId()
+    public function getNextActivityid()
     {
-        return $this->nextActivityId;
+        return $this->next_activity_id;
     }
 
     /**
-     * @param string $nextActivityId
+     * @param string $next_activity_id
      * @return PersonResponse
      */
-    public function setNextActivityId($nextActivityId)
+    public function setNextActivityid($next_activity_id)
     {
-        $this->nextActivityId = $nextActivityId;
+        $this->next_activity_id = $next_activity_id;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getLastActivityId()
+    public function getLastActivityid()
     {
-        return $this->lastActivityId;
+        return $this->last_activity_id;
     }
 
     /**
-     * @param string $lastActivityId
+     * @param string $last_activity_id
      * @return PersonResponse
      */
-    public function setLastActivityId($lastActivityId)
+    public function setLastActivityid($last_activity_id)
     {
-        $this->lastActivityId = $lastActivityId;
+        $this->last_activity_id = $last_activity_id;
         return $this;
     }
 
     /**
      * @return \DateTime
      */
-    public function getLastActivityDate()
+    public function getLastActivitydate()
     {
-        return $this->lastActivityDate;
+        return $this->last_activity_date;
     }
 
     /**
-     * @param \DateTime $lastActivityDate
+     * @param \DateTime $last_activity_date
      * @return PersonResponse
      */
-    public function setLastActivityDate($lastActivityDate)
+    public function setLastActivitydate($last_activity_date)
     {
-        $this->lastActivityDate = $lastActivityDate;
+        $this->last_activity_date = $last_activity_date;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getLastIncomingMailTime()
+    public function getLastIncomingmailtime()
     {
-        return $this->lastIncomingMailTime;
+        return $this->last_incoming_mail_time;
     }
 
     /**
-     * @param string $lastIncomingMailTime
+     * @param string $last_incoming_mail_time
      * @return PersonResponse
      */
-    public function setLastIncomingMailTime($lastIncomingMailTime)
+    public function setLastIncomingmailtime($last_incoming_mail_time)
     {
-        $this->lastIncomingMailTime = $lastIncomingMailTime;
+        $this->last_incoming_mail_time = $last_incoming_mail_time;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getLastOutgoingMailTime()
+    public function getLastOutgoingmailtime()
     {
-        return $this->lastOutgoingMailTime;
+        return $this->last_outgoing_mail_time;
     }
 
     /**
-     * @param string $lastOutgoingMailTime
+     * @param string $last_outgoing_mail_time
      * @return PersonResponse
      */
-    public function setLastOutgoingMailTime($lastOutgoingMailTime)
+    public function setLastOutgoingmailtime($last_outgoing_mail_time)
     {
-        $this->lastOutgoingMailTime = $lastOutgoingMailTime;
+        $this->last_outgoing_mail_time = $last_outgoing_mail_time;
         return $this;
     }
 
@@ -952,16 +952,16 @@ class PersonResponse
      */
     public function getOrgName()
     {
-        return $this->orgName;
+        return $this->org_name;
     }
 
     /**
-     * @param string $orgName
+     * @param string $org_name
      * @return PersonResponse
      */
-    public function setOrgName($orgName)
+    public function setOrgName($org_name)
     {
-        $this->orgName = $orgName;
+        $this->org_name = $org_name;
         return $this;
     }
 
@@ -970,16 +970,16 @@ class PersonResponse
      */
     public function getCcEmail()
     {
-        return $this->ccEmail;
+        return $this->cc_email;
     }
 
     /**
-     * @param string $ccEmail
+     * @param string $cc_email
      * @return PersonResponse
      */
-    public function setCcEmail($ccEmail)
+    public function setCcEmail($cc_email)
     {
-        $this->ccEmail = $ccEmail;
+        $this->cc_email = $cc_email;
         return $this;
     }
 
@@ -988,7 +988,7 @@ class PersonResponse
      */
     public function getOwnerName()
     {
-        return $this->ownerName;
+        return $this->owner_name;
     }
 
     /**
@@ -997,7 +997,7 @@ class PersonResponse
      */
     public function setOwnerName($ownerName)
     {
-        $this->ownerName = $ownerName;
+        $this->owner_name = $ownerName;
         return $this;
     }
 
