@@ -223,8 +223,40 @@ class PersonRequest
      */
     public function addProp($key, $value)
     {
-        $this->$key = $value;
+        $this->{$key} = $value;
         return $this;
+    }
+
+    /**
+     * @param $name
+     * @param $value
+     * @return PersonRequest
+     */
+    public function __set($name, $value)
+    {
+        $this->$name = $value;
+        return $this;
+    }
+
+    /**
+     * @param $name
+     * @return mixed
+     */
+    public function __get($name)
+    {
+        if ($this->__isset($name)) {
+            return $this->{$name};
+        }
+        return false;
+    }
+
+    /**
+     * @param $name
+     * @return bool
+     */
+    function __isset($name)
+    {
+        return isset($this->{$name});
     }
 
     /**
@@ -233,8 +265,8 @@ class PersonRequest
      */
     public function getProp($key)
     {
-        if (isset($this->$key)) {
-            return $this->$key;
+        if (isset($this->{$key})) {
+            return $this->{$key};
         }
         return false;
     }

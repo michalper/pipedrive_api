@@ -1008,7 +1008,7 @@ class PersonResponse
      */
     public function addProp($key, $value)
     {
-        $this->$key = $value;
+        $this->{$key} = $value;
         return $this;
     }
 
@@ -1018,8 +1018,8 @@ class PersonResponse
      */
     public function getProp($key)
     {
-        if (isset($this->$key)) {
-            return $this->$key;
+        if (isset($this->{$key})) {
+            return $this->{$key};
         }
         return false;
     }
