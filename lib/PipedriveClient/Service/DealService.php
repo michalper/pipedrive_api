@@ -60,7 +60,7 @@ class DealService implements InterfaceService
     {
         $ret = $this->service
             ->setRequestMethod(Service::REQUEST_METHOD_POST)
-            ->setGetParams($this->serializer->normalize($dealModel))
+            ->setPostData($this->serializer->normalize($dealModel))
             ->request('deals');
 
         if ($ret->getData()) {

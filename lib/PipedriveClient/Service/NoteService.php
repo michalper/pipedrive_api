@@ -50,4 +50,22 @@ class NoteService implements InterfaceService
         }
         return [];
     }
+
+    /**
+     * @param NoteModel $noteModel
+     * @see https://developers.pipedrive.com/docs/api/v1/#!/Notes/post_notes
+     * @return boolean|NoteModel
+     */
+    public function add(NoteModel $noteModel)
+    {
+        $ret = $this->service
+            ->setRequestMethod(Service::REQUEST_METHOD_POST)
+            ->setPostData($this->serializer->normalize($noteModel))
+            ->request('notes');
+
+        if ($ret->getData()) {
+            return $this->serializer->denormalize($ret->getData(), NoteModel::class);
+        }
+        return false;
+    }
 }
