@@ -69,4 +69,22 @@ class DealService implements InterfaceService
         return false;
     }
 
+    /**
+     * @param integer $idDeal
+     * @param integer $idPerson
+     * @return bool|mixed
+     */
+    public function addParticipantToDeal($idDeal, $idPerson)
+    {
+        $ret = $this->service
+            ->setRequestMethod(Service::REQUEST_METHOD_POST)
+            ->setPostData(['id' => $idDeal, 'person_id' => $idPerson])
+            ->request('deals/' . $idDeal . '/participants');
+
+        if ($ret->getData()) {
+            return $this->serializer->denormalize($ret->getData(), DealModel::class);
+        }
+        return false;
+    }
+
 }
