@@ -9,12 +9,12 @@ namespace PipedriveClient\Model;
 class StageModel
 {
     /**
-     * @var integer
+     * @var string
      */
     private $id;
 
     /**
-     * @var integer
+     * @var string
      */
     private $orderNr;
 
@@ -29,12 +29,12 @@ class StageModel
     private $activeFlag;
 
     /**
-     * @var integer
+     * @var string
      */
     private $dealProbability;
 
     /**
-     * @var integer
+     * @var string
      */
     private $pipelineId;
 
@@ -59,7 +59,7 @@ class StageModel
     private $updateTime;
 
     /**
-     * @return int
+     * @return string
      */
     public function getId()
     {
@@ -67,7 +67,7 @@ class StageModel
     }
 
     /**
-     * @param int $id
+     * @param string $id
      * @return StageModel
      */
     public function setId($id)
@@ -77,7 +77,7 @@ class StageModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getOrderNr()
     {
@@ -85,7 +85,7 @@ class StageModel
     }
 
     /**
-     * @param int $orderNr
+     * @param string $orderNr
      * @return StageModel
      */
     public function setOrderNr($orderNr)
@@ -131,7 +131,7 @@ class StageModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getDealProbability()
     {
@@ -139,7 +139,7 @@ class StageModel
     }
 
     /**
-     * @param int $dealProbability
+     * @param string $dealProbability
      * @return StageModel
      */
     public function setDealProbability($dealProbability)
@@ -149,7 +149,7 @@ class StageModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getPipelineId()
     {
@@ -157,7 +157,7 @@ class StageModel
     }
 
     /**
-     * @param int $pipelineId
+     * @param string $pipelineId
      * @return StageModel
      */
     public function setPipelineId($pipelineId)

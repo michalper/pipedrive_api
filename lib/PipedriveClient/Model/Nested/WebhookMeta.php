@@ -9,7 +9,7 @@ namespace PipedriveClient\Model\Nested;
 class WebhookMeta
 {
     /**
-     * @var integer
+     * @var string
      */
     private $v;
 
@@ -24,17 +24,17 @@ class WebhookMeta
     private $object;
 
     /**
-     * @var integer
+     * @var string
      */
     private $id;
 
     /**
-     * @var integer
+     * @var string
      */
     private $companyId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $userId;
 
@@ -44,12 +44,12 @@ class WebhookMeta
     private $host;
 
     /**
-     * @var integer
+     * @var string
      */
     private $timestamp;
 
     /**
-     * @var integer
+     * @var string
      */
     private $timestampMicro;
 
@@ -79,7 +79,7 @@ class WebhookMeta
     private $webhookId;
 
     /**
-     * @return int
+     * @return string
      */
     public function getV()
     {
@@ -87,7 +87,7 @@ class WebhookMeta
     }
 
     /**
-     * @param int $v
+     * @param string $v
      * @return WebhookMeta
      */
     public function setV($v)
@@ -133,7 +133,7 @@ class WebhookMeta
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getId()
     {
@@ -141,7 +141,7 @@ class WebhookMeta
     }
 
     /**
-     * @param int $id
+     * @param string $id
      * @return WebhookMeta
      */
     public function setId($id)
@@ -151,7 +151,7 @@ class WebhookMeta
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getCompanyId()
     {
@@ -159,7 +159,7 @@ class WebhookMeta
     }
 
     /**
-     * @param int $companyId
+     * @param string $companyId
      * @return WebhookMeta
      */
     public function setCompanyId($companyId)
@@ -169,7 +169,7 @@ class WebhookMeta
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getUserId()
     {
@@ -177,7 +177,7 @@ class WebhookMeta
     }
 
     /**
-     * @param int $userId
+     * @param string $userId
      * @return WebhookMeta
      */
     public function setUserId($userId)
@@ -205,7 +205,7 @@ class WebhookMeta
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getTimestamp()
     {
@@ -213,7 +213,7 @@ class WebhookMeta
     }
 
     /**
-     * @param int $timestamp
+     * @param string $timestamp
      * @return WebhookMeta
      */
     public function setTimestamp($timestamp)
@@ -223,7 +223,7 @@ class WebhookMeta
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getTimestampMicro()
     {
@@ -231,7 +231,7 @@ class WebhookMeta
     }
 
     /**
-     * @param int $timestampMicro
+     * @param string $timestampMicro
      * @return WebhookMeta
      */
     public function setTimestampMicro($timestampMicro)

@@ -9,22 +9,22 @@ namespace PipedriveClient\Model;
 class NoteModel
 {
     /**
-     * @var integer
+     * @var string
      */
     private $id;
 
     /**
-     * @var integer
+     * @var string
      */
     private $userId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $dealId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $personId;
 
@@ -69,7 +69,7 @@ class NoteModel
     private $pinnedToOrganizationFlag;
 
     /**
-     * @var integer
+     * @var string
      */
     private $lastUpdateUserId;
 
@@ -94,7 +94,7 @@ class NoteModel
     private $user;
 
     /**
-     * @return int
+     * @return string
      */
     public function getId()
     {
@@ -102,7 +102,7 @@ class NoteModel
     }
 
     /**
-     * @param int $id
+     * @param string $id
      * @return NoteModel
      */
     public function setId($id)
@@ -112,7 +112,7 @@ class NoteModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getUserId()
     {
@@ -120,7 +120,7 @@ class NoteModel
     }
 
     /**
-     * @param int $userId
+     * @param string $userId
      * @return NoteModel
      */
     public function setUserId($userId)
@@ -130,7 +130,7 @@ class NoteModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getDealId()
     {
@@ -138,7 +138,7 @@ class NoteModel
     }
 
     /**
-     * @param int $dealId
+     * @param string $dealId
      * @return NoteModel
      */
     public function setDealId($dealId)
@@ -148,7 +148,7 @@ class NoteModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getPersonId()
     {
@@ -156,7 +156,7 @@ class NoteModel
     }
 
     /**
-     * @param int $personId
+     * @param string $personId
      * @return NoteModel
      */
     public function setPersonId($personId)
@@ -310,7 +310,7 @@ class NoteModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getLastUpdateUserId()
     {
@@ -318,7 +318,7 @@ class NoteModel
     }
 
     /**
-     * @param int $lastUpdateUserId
+     * @param string $lastUpdateUserId
      * @return NoteModel
      */
     public function setLastUpdateUserId($lastUpdateUserId)

@@ -9,22 +9,22 @@ namespace PipedriveClient\Model\Response;
 class WebhookResponse
 {
     /**
-     * @var integer
+     * @var string
      */
     private $id;
 
     /**
-     * @var integer
+     * @var string
      */
     private $companyId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $adminId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $userId;
 
@@ -79,7 +79,7 @@ class WebhookResponse
     private $lastHttpStatus;
 
     /**
-     * @return int
+     * @return string
      */
     public function getId()
     {
@@ -87,7 +87,7 @@ class WebhookResponse
     }
 
     /**
-     * @param int $id
+     * @param string $id
      * @return WebhookResponse
      */
     public function setId($id)
@@ -97,7 +97,7 @@ class WebhookResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getCompanyId()
     {
@@ -105,7 +105,7 @@ class WebhookResponse
     }
 
     /**
-     * @param int $companyId
+     * @param string $companyId
      * @return WebhookResponse
      */
     public function setCompanyId($companyId)
@@ -115,7 +115,7 @@ class WebhookResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getAdminId()
     {
@@ -123,7 +123,7 @@ class WebhookResponse
     }
 
     /**
-     * @param int $adminId
+     * @param string $adminId
      * @return WebhookResponse
      */
     public function setAdminId($adminId)
@@ -133,7 +133,7 @@ class WebhookResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getUserId()
     {
@@ -141,7 +141,7 @@ class WebhookResponse
     }
 
     /**
-     * @param int $userId
+     * @param string $userId
      * @return WebhookResponse
      */
     public function setUserId($userId)

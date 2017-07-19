@@ -9,12 +9,12 @@ namespace PipedriveClient\Model;
 class SearchModel
 {
     /**
-     * @var integer
+     * @var string
      */
     private $userId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $filterId;
 
@@ -24,12 +24,12 @@ class SearchModel
     private $firstChar;
 
     /**
-     * @var integer
+     * @var string
      */
     private $start = 0;
 
     /**
-     * @var integer
+     * @var string
      */
     private $limit;
 
@@ -39,7 +39,7 @@ class SearchModel
     private $sort;
 
     /**
-     * @return int
+     * @return string
      */
     public function getUserId()
     {
@@ -47,7 +47,7 @@ class SearchModel
     }
 
     /**
-     * @param int $userId
+     * @param string $userId
      * @return SearchModel
      */
     public function setUserId($userId)
@@ -57,7 +57,7 @@ class SearchModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getFilterId()
     {
@@ -65,7 +65,7 @@ class SearchModel
     }
 
     /**
-     * @param int $filterId
+     * @param string $filterId
      * @return SearchModel
      */
     public function setFilterId($filterId)
@@ -93,7 +93,7 @@ class SearchModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getStart()
     {
@@ -101,7 +101,7 @@ class SearchModel
     }
 
     /**
-     * @param int $start
+     * @param string $start
      * @return SearchModel
      */
     public function setStart($start)
@@ -111,7 +111,7 @@ class SearchModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getLimit()
     {
@@ -119,7 +119,7 @@ class SearchModel
     }
 
     /**
-     * @param int $limit
+     * @param string $limit
      * @return SearchModel
      */
     public function setLimit($limit)

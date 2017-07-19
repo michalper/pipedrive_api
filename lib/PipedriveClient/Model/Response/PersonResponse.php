@@ -13,12 +13,12 @@ use PipedriveClient\Model\Nested\Phone;
 class PersonResponse
 {
     /**
-     * @var integer
+     * @var string
      */
     private $id;
 
     /**
-     * @var integer
+     * @var string
      */
     private $company_id;
 
@@ -28,7 +28,7 @@ class PersonResponse
     private $owner_id;
 
     /**
-     * @var integer
+     * @var string
      */
     private $org_id;
 
@@ -48,92 +48,92 @@ class PersonResponse
     private $last_name;
 
     /**
-     * @var integer
+     * @var string
      */
     private $open_deals_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $related_open_deals_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $closed_deals_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $related_closed_deals_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $participant_open_deals_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $participant_closed_deals_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $email_messages_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $activities_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $done_activities_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $undone_activities_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $reference_activities_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $files_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $notes_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $followers_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $won_deals_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $related_won_deals_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $lost_deals_count;
 
     /**
-     * @var integer
+     * @var string
      */
     private $related_lost_deals_count;
 
@@ -168,7 +168,7 @@ class PersonResponse
     private $update_time;
 
     /**
-     * @var integer
+     * @var string
      */
     private $visible_to;
 
@@ -228,7 +228,7 @@ class PersonResponse
     private $owner_name;
 
     /**
-     * @return int
+     * @return string
      */
     public function getId()
     {
@@ -236,7 +236,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $id
+     * @param string $id
      * @return PersonResponse
      */
     public function setId($id)
@@ -246,7 +246,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getCompanyId()
     {
@@ -254,7 +254,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $company_id
+     * @param string $company_id
      * @return PersonResponse
      */
     public function setCompanyId($company_id)
@@ -282,7 +282,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getOrgId()
     {
@@ -290,7 +290,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $org_id
+     * @param string $org_id
      * @return PersonResponse
      */
     public function setOrgId($org_id)
@@ -354,7 +354,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getOpenDealscount()
     {
@@ -362,7 +362,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $open_deals_count
+     * @param string $open_deals_count
      * @return PersonResponse
      */
     public function setOpenDealscount($open_deals_count)
@@ -372,7 +372,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getRelatedOpendealscount()
     {
@@ -380,7 +380,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $related_open_deals_count
+     * @param string $related_open_deals_count
      * @return PersonResponse
      */
     public function setRelatedOpendealscount($related_open_deals_count)
@@ -390,7 +390,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getClosedDealscount()
     {
@@ -398,7 +398,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $closed_deals_count
+     * @param string $closed_deals_count
      * @return PersonResponse
      */
     public function setClosedDealscount($closed_deals_count)
@@ -408,7 +408,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getRelatedCloseddealscount()
     {
@@ -416,7 +416,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $related_closed_deals_count
+     * @param string $related_closed_deals_count
      * @return PersonResponse
      */
     public function setRelatedCloseddealscount($related_closed_deals_count)
@@ -426,7 +426,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getParticipantOpendealscount()
     {
@@ -434,7 +434,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $participant_open_deals_count
+     * @param string $participant_open_deals_count
      * @return PersonResponse
      */
     public function setParticipantOpendealscount($participant_open_deals_count)
@@ -444,7 +444,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getParticipantCloseddealscount()
     {
@@ -452,7 +452,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $participant_closed_deals_count
+     * @param string $participant_closed_deals_count
      * @return PersonResponse
      */
     public function setParticipantCloseddealscount($participant_closed_deals_count)
@@ -462,7 +462,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getEmailMessagescount()
     {
@@ -470,7 +470,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $email_messages_count
+     * @param string $email_messages_count
      * @return PersonResponse
      */
     public function setEmailMessagescount($email_messages_count)
@@ -480,7 +480,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getActivitiesCount()
     {
@@ -488,7 +488,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $activities_count
+     * @param string $activities_count
      * @return PersonResponse
      */
     public function setActivitiesCount($activities_count)
@@ -498,7 +498,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getDoneActivitiescount()
     {
@@ -506,7 +506,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $done_activities_count
+     * @param string $done_activities_count
      * @return PersonResponse
      */
     public function setDoneActivitiescount($done_activities_count)
@@ -516,7 +516,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getUndoneActivitiescount()
     {
@@ -524,7 +524,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $undone_activities_count
+     * @param string $undone_activities_count
      * @return PersonResponse
      */
     public function setUndoneActivitiescount($undone_activities_count)
@@ -534,7 +534,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getReferenceActivitiescount()
     {
@@ -542,7 +542,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $reference_activities_count
+     * @param string $reference_activities_count
      * @return PersonResponse
      */
     public function setReferenceActivitiescount($reference_activities_count)
@@ -552,7 +552,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getFilesCount()
     {
@@ -560,7 +560,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $files_count
+     * @param string $files_count
      * @return PersonResponse
      */
     public function setFilesCount($files_count)
@@ -570,7 +570,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getNotesCount()
     {
@@ -578,7 +578,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $notes_count
+     * @param string $notes_count
      * @return PersonResponse
      */
     public function setNotesCount($notes_count)
@@ -588,7 +588,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getFollowersCount()
     {
@@ -596,7 +596,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $followers_count
+     * @param string $followers_count
      * @return PersonResponse
      */
     public function setFollowersCount($followers_count)
@@ -606,7 +606,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getWonDealscount()
     {
@@ -614,7 +614,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $won_deals_count
+     * @param string $won_deals_count
      * @return PersonResponse
      */
     public function setWonDealscount($won_deals_count)
@@ -624,7 +624,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getRelatedWondealscount()
     {
@@ -632,7 +632,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $related_won_deals_count
+     * @param string $related_won_deals_count
      * @return PersonResponse
      */
     public function setRelatedWondealscount($related_won_deals_count)
@@ -642,7 +642,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getLostDealscount()
     {
@@ -650,7 +650,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $lost_deals_count
+     * @param string $lost_deals_count
      * @return PersonResponse
      */
     public function setLostDealscount($lost_deals_count)
@@ -660,7 +660,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getRelatedLostdealscount()
     {
@@ -668,7 +668,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $related_lost_deals_count
+     * @param string $related_lost_deals_count
      * @return PersonResponse
      */
     public function setRelatedLostdealscount($related_lost_deals_count)
@@ -786,7 +786,7 @@ class PersonResponse
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getVisibleTo()
     {
@@ -794,7 +794,7 @@ class PersonResponse
     }
 
     /**
-     * @param int $visible_to
+     * @param string $visible_to
      * @return PersonResponse
      */
     public function setVisibleTo($visible_to)

@@ -9,17 +9,17 @@ namespace PipedriveClient\Model;
 class ActivityModel
 {
     /**
-     * @var integer
+     * @var string
      */
     private $id;
 
     /**
-     * @var integer
+     * @var string
      */
     private $companyId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $userId;
 
@@ -39,7 +39,7 @@ class ActivityModel
     private $referenceType;
 
     /**
-     * @var integer
+     * @var string
      */
     private $referenceId;
 
@@ -74,17 +74,17 @@ class ActivityModel
     private $subject;
 
     /**
-     * @var integer
+     * @var string
      */
     private $dealId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $orgId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $personId;
 
@@ -134,12 +134,12 @@ class ActivityModel
     private $dealTitle;
 
     /**
-     * @var integer
+     * @var string
      */
     private $assignedToUserId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $createdByUserId;
 
@@ -164,7 +164,7 @@ class ActivityModel
     private $noGcal;
 
     /**
-     * @return int
+     * @return string
      */
     public function getId()
     {
@@ -172,7 +172,7 @@ class ActivityModel
     }
 
     /**
-     * @param int $id
+     * @param string $id
      * @return ActivityModel
      */
     public function setId($id)
@@ -182,7 +182,7 @@ class ActivityModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getCompanyId()
     {
@@ -190,7 +190,7 @@ class ActivityModel
     }
 
     /**
-     * @param int $companyId
+     * @param string $companyId
      * @return ActivityModel
      */
     public function setCompanyId($companyId)
@@ -200,7 +200,7 @@ class ActivityModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getUserId()
     {
@@ -208,7 +208,7 @@ class ActivityModel
     }
 
     /**
-     * @param int $userId
+     * @param string $userId
      * @return ActivityModel
      */
     public function setUserId($userId)
@@ -272,7 +272,7 @@ class ActivityModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getReferenceId()
     {
@@ -280,7 +280,7 @@ class ActivityModel
     }
 
     /**
-     * @param int $referenceId
+     * @param string $referenceId
      * @return ActivityModel
      */
     public function setReferenceId($referenceId)
@@ -398,7 +398,7 @@ class ActivityModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getDealId()
     {
@@ -406,7 +406,7 @@ class ActivityModel
     }
 
     /**
-     * @param int $dealId
+     * @param string $dealId
      * @return ActivityModel
      */
     public function setDealId($dealId)
@@ -416,7 +416,7 @@ class ActivityModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getOrgId()
     {
@@ -424,7 +424,7 @@ class ActivityModel
     }
 
     /**
-     * @param int $orgId
+     * @param string $orgId
      * @return ActivityModel
      */
     public function setOrgId($orgId)
@@ -434,7 +434,7 @@ class ActivityModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getPersonId()
     {
@@ -442,7 +442,7 @@ class ActivityModel
     }
 
     /**
-     * @param int $personId
+     * @param string $personId
      * @return ActivityModel
      */
     public function setPersonId($personId)
@@ -614,7 +614,7 @@ class ActivityModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getAssignedToUserId()
     {
@@ -622,7 +622,7 @@ class ActivityModel
     }
 
     /**
-     * @param int $assignedToUserId
+     * @param string $assignedToUserId
      * @return ActivityModel
      */
     public function setAssignedToUserId($assignedToUserId)
@@ -632,7 +632,7 @@ class ActivityModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getCreatedByUserId()
     {
@@ -640,7 +640,7 @@ class ActivityModel
     }
 
     /**
-     * @param int $createdByUserId
+     * @param string $createdByUserId
      * @return ActivityModel
      */
     public function setCreatedByUserId($createdByUserId)

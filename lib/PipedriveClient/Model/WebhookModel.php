@@ -34,7 +34,7 @@ class WebhookModel
     const EVENT_OBJECT_USER = 'user';
 
     /**
-     * @var integer
+     * @var string
      */
     private $v;
 
@@ -64,12 +64,12 @@ class WebhookModel
     private $event;
 
     /**
-     * @var integer
+     * @var string
      */
     private $retry;
 
     /**
-     * @return int
+     * @return string
      */
     public function getV()
     {
@@ -77,7 +77,7 @@ class WebhookModel
     }
 
     /**
-     * @param int $v
+     * @param string $v
      * @return WebhookModel
      */
     public function setV($v)
@@ -177,7 +177,7 @@ class WebhookModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getRetry()
     {
@@ -185,7 +185,7 @@ class WebhookModel
     }
 
     /**
-     * @param int $retry
+     * @param string $retry
      * @return WebhookModel
      */
     public function setRetry($retry)

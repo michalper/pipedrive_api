@@ -9,7 +9,7 @@ namespace PipedriveClient\Model\Request;
 class WebhookRequest
 {
     /**
-     * @var integer
+     * @var string
      */
     private $userId;
 
@@ -39,7 +39,7 @@ class WebhookRequest
     private $httpAuthPassword;
 
     /**
-     * @return int
+     * @return string
      */
     public function getUserId()
     {
@@ -47,7 +47,7 @@ class WebhookRequest
     }
 
     /**
-     * @param int $userId
+     * @param string $userId
      * @return WebhookRequest
      */
     public function setUserId($userId)

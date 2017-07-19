@@ -9,27 +9,27 @@ namespace PipedriveClient\Model;
 class DealModel
 {
     /**
-     * @var integer
+     * @var string
      */
     private $id;
 
     /**
-     * @var integer
+     * @var string
      */
     private $creatorUserId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $userId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $personId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $stageId;
 
@@ -109,7 +109,7 @@ class DealModel
     private $lostReason;
 
     /**
-     * @var integer
+     * @var string
      */
     private $visibleTo;
 
@@ -119,7 +119,7 @@ class DealModel
     private $closeTime;
 
     /**
-     * @var integer
+     * @var string
      */
     private $pipelineId;
 
@@ -134,52 +134,52 @@ class DealModel
     private $firstWonTime;
 
     /**
-     * @var integer
+     * @var string
      */
     private $productsCount;
 
     /**
-     * @var integer
+     * @var string
      */
     private $filesCount;
 
     /**
-     * @var integer
+     * @var string
      */
     private $notesCount;
 
     /**
-     * @var integer
+     * @var string
      */
     private $followersCount;
 
     /**
-     * @var integer
+     * @var string
      */
     private $emailMessagesCount;
 
     /**
-     * @var integer
+     * @var string
      */
     private $activitiesCount;
 
     /**
-     * @var integer
+     * @var string
      */
     private $doneActivitiesCount;
 
     /**
-     * @var integer
+     * @var string
      */
     private $undoneActivitiesCount;
 
     /**
-     * @var integer
+     * @var string
      */
     private $referenceActivitiesCount;
 
     /**
-     * @var integer
+     * @var string
      */
     private $participantsCount;
 
@@ -199,7 +199,7 @@ class DealModel
     private $lastOutgoingMailTime;
 
     /**
-     * @var integer
+     * @var string
      */
     private $stageOrderNr;
 
@@ -244,7 +244,7 @@ class DealModel
     private $rottenTime;
 
     /**
-     * @var integer
+     * @var string
      */
     private $weightedValue;
 
@@ -284,7 +284,7 @@ class DealModel
     private $nextActivity;
 
     /**
-     * @return int
+     * @return string
      */
     public function getId()
     {
@@ -292,7 +292,7 @@ class DealModel
     }
 
     /**
-     * @param int $id
+     * @param string $id
      * @return DealModel
      */
     public function setId($id)
@@ -302,7 +302,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getCreatorUserId()
     {
@@ -310,7 +310,7 @@ class DealModel
     }
 
     /**
-     * @param int $creatorUserId
+     * @param string $creatorUserId
      * @return DealModel
      */
     public function setCreatorUserId($creatorUserId)
@@ -320,7 +320,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getUserId()
     {
@@ -328,7 +328,7 @@ class DealModel
     }
 
     /**
-     * @param int $userId
+     * @param string $userId
      * @return DealModel
      */
     public function setUserId($userId)
@@ -338,7 +338,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getPersonId()
     {
@@ -346,7 +346,7 @@ class DealModel
     }
 
     /**
-     * @param int $personId
+     * @param string $personId
      * @return DealModel
      */
     public function setPersonId($personId)
@@ -356,7 +356,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getStageId()
     {
@@ -364,7 +364,7 @@ class DealModel
     }
 
     /**
-     * @param int $stageId
+     * @param string $stageId
      * @return DealModel
      */
     public function setStageId($stageId)
@@ -644,7 +644,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getVisibleTo()
     {
@@ -652,7 +652,7 @@ class DealModel
     }
 
     /**
-     * @param int $visibleTo
+     * @param string $visibleTo
      * @return DealModel
      */
     public function setVisibleTo($visibleTo)
@@ -680,7 +680,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getPipelineId()
     {
@@ -688,7 +688,7 @@ class DealModel
     }
 
     /**
-     * @param int $pipelineId
+     * @param string $pipelineId
      * @return DealModel
      */
     public function setPipelineId($pipelineId)
@@ -734,7 +734,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getProductsCount()
     {
@@ -742,7 +742,7 @@ class DealModel
     }
 
     /**
-     * @param int $productsCount
+     * @param string $productsCount
      * @return DealModel
      */
     public function setProductsCount($productsCount)
@@ -752,7 +752,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getFilesCount()
     {
@@ -760,7 +760,7 @@ class DealModel
     }
 
     /**
-     * @param int $filesCount
+     * @param string $filesCount
      * @return DealModel
      */
     public function setFilesCount($filesCount)
@@ -770,7 +770,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getNotesCount()
     {
@@ -778,7 +778,7 @@ class DealModel
     }
 
     /**
-     * @param int $notesCount
+     * @param string $notesCount
      * @return DealModel
      */
     public function setNotesCount($notesCount)
@@ -788,7 +788,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getFollowersCount()
     {
@@ -796,7 +796,7 @@ class DealModel
     }
 
     /**
-     * @param int $followersCount
+     * @param string $followersCount
      * @return DealModel
      */
     public function setFollowersCount($followersCount)
@@ -806,7 +806,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getEmailMessagesCount()
     {
@@ -814,7 +814,7 @@ class DealModel
     }
 
     /**
-     * @param int $emailMessagesCount
+     * @param string $emailMessagesCount
      * @return DealModel
      */
     public function setEmailMessagesCount($emailMessagesCount)
@@ -824,7 +824,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getActivitiesCount()
     {
@@ -832,7 +832,7 @@ class DealModel
     }
 
     /**
-     * @param int $activitiesCount
+     * @param string $activitiesCount
      * @return DealModel
      */
     public function setActivitiesCount($activitiesCount)
@@ -842,7 +842,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getDoneActivitiesCount()
     {
@@ -850,7 +850,7 @@ class DealModel
     }
 
     /**
-     * @param int $doneActivitiesCount
+     * @param string $doneActivitiesCount
      * @return DealModel
      */
     public function setDoneActivitiesCount($doneActivitiesCount)
@@ -860,7 +860,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getUndoneActivitiesCount()
     {
@@ -868,7 +868,7 @@ class DealModel
     }
 
     /**
-     * @param int $undoneActivitiesCount
+     * @param string $undoneActivitiesCount
      * @return DealModel
      */
     public function setUndoneActivitiesCount($undoneActivitiesCount)
@@ -878,7 +878,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getReferenceActivitiesCount()
     {
@@ -886,7 +886,7 @@ class DealModel
     }
 
     /**
-     * @param int $referenceActivitiesCount
+     * @param string $referenceActivitiesCount
      * @return DealModel
      */
     public function setReferenceActivitiesCount($referenceActivitiesCount)
@@ -896,7 +896,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getParticipantsCount()
     {
@@ -904,7 +904,7 @@ class DealModel
     }
 
     /**
-     * @param int $participantsCount
+     * @param string $participantsCount
      * @return DealModel
      */
     public function setParticipantsCount($participantsCount)
@@ -968,7 +968,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getStageOrderNr()
     {
@@ -976,7 +976,7 @@ class DealModel
     }
 
     /**
-     * @param int $stageOrderNr
+     * @param string $stageOrderNr
      * @return DealModel
      */
     public function setStageOrderNr($stageOrderNr)
@@ -1130,7 +1130,7 @@ class DealModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getWeightedValue()
     {
@@ -1138,7 +1138,7 @@ class DealModel
     }
 
     /**
-     * @param int $weightedValue
+     * @param string $weightedValue
      * @return DealModel
      */
     public function setWeightedValue($weightedValue)

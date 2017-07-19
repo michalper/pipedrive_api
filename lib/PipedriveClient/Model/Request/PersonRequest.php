@@ -25,12 +25,12 @@ class PersonRequest
     private $firstName;
 
     /**
-     * @var integer
+     * @var string
      */
     private $ownerId;
 
     /**
-     * @var integer
+     * @var string
      */
     private $orgId;
 
@@ -45,7 +45,7 @@ class PersonRequest
     private $phone;
 
     /**
-     * @var integer
+     * @var string
      */
     private $visibleTo;
 
@@ -73,7 +73,7 @@ class PersonRequest
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getOwnerId()
     {
@@ -81,7 +81,7 @@ class PersonRequest
     }
 
     /**
-     * @param int $ownerId
+     * @param string $ownerId
      * @return PersonRequest
      */
     public function setOwnerId($ownerId)
@@ -91,7 +91,7 @@ class PersonRequest
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getOrgId()
     {
@@ -99,7 +99,7 @@ class PersonRequest
     }
 
     /**
-     * @param int $orgId
+     * @param string $orgId
      * @return PersonRequest
      */
     public function setOrgId($orgId)
@@ -145,7 +145,7 @@ class PersonRequest
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getVisibleTo()
     {
@@ -153,7 +153,7 @@ class PersonRequest
     }
 
     /**
-     * @param int $visibleTo
+     * @param string $visibleTo
      * @return PersonRequest
      */
     public function setVisibleTo($visibleTo)

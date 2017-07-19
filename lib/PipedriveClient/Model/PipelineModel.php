@@ -9,7 +9,7 @@ namespace PipedriveClient\Model;
 class PipelineModel
 {
     /**
-     * @var integer
+     * @var string
      */
     private $id;
 
@@ -24,7 +24,7 @@ class PipelineModel
     private $urlTitle;
 
     /**
-     * @var integer
+     * @var string
      */
     private $orderNr;
 
@@ -44,7 +44,7 @@ class PipelineModel
     private $updateTime;
 
     /**
-     * @return int
+     * @return string
      */
     public function getId()
     {
@@ -52,7 +52,7 @@ class PipelineModel
     }
 
     /**
-     * @param int $id
+     * @param string $id
      * @return PipelineModel
      */
     public function setId($id)
@@ -98,7 +98,7 @@ class PipelineModel
     }
 
     /**
-     * @return int
+     * @return string
      */
     public function getOrderNr()
     {
@@ -106,7 +106,7 @@ class PipelineModel
     }
 
     /**
-     * @param int $orderNr
+     * @param string $orderNr
      * @return PipelineModel
      */
     public function setOrderNr($orderNr)
