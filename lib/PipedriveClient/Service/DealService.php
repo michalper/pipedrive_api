@@ -87,4 +87,31 @@ class DealService implements InterfaceService
         return false;
     }
 
+    /**
+     * @param string $term
+     * @param integer|boolean $idPerson
+     * @param integer|boolean $idOrg
+     * @return DealModel[]
+     */
+    public function findDealsByName($term, $idPerson = false, $idOrg = false)
+    {
+        $params = [];
+        $params['term'] = $term;
+
+        if ($idPerson)
+            $params['person_id'] = $idPerson;
+
+        if ($idOrg)
+            $params['org_id'] = $idOrg;
+
+        $ret = $this->service
+            ->setRequestMethod(Service::REQUEST_METHOD_GET)
+            ->setGetParams($params)
+            ->request('deals/find');
+
+        if ($ret->getData()) {
+            return $this->serializer->denormalize($ret->getData(), DealModel::class . '[]');
+        }
+        return [];
+    }
 }

@@ -1272,4 +1272,27 @@ class DealModel
         $this->nextActivity = $nextActivity;
         return $this;
     }
+
+    /**
+     * @param string $key
+     * @param string $value
+     * @return DealModel
+     */
+    public function addProp($key, $value)
+    {
+        $this->{$key} = $value;
+        return $this;
+    }
+
+    /**
+     * @param string $key
+     * @return mixed
+     */
+    public function getProp($key)
+    {
+        if (isset($this->{$key})) {
+            return $this->{$key};
+        }
+        return false;
+    }
 }
