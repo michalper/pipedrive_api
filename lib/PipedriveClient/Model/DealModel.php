@@ -16,22 +16,22 @@ class DealModel
     /**
      * @var string
      */
-    private $creatorUserId;
+    private $creator_user_id;
 
     /**
      * @var string
      */
-    private $userId;
+    private $user_id;
 
     /**
      * @var string
      */
-    private $personId;
+    private $person_id;
 
     /**
      * @var string
      */
-    private $stageId;
+    private $stage_id;
 
     /**
      * @var string
@@ -51,17 +51,17 @@ class DealModel
     /**
      * @var \DateTime
      */
-    private $addTime;
+    private $add_time;
 
     /**
      * @var \DateTime
      */
-    private $updateTime;
+    private $update_time;
 
     /**
      * @var string
      */
-    private $stageChangeTime;
+    private $stage_change_time;
 
     /**
      * @var boolean
@@ -81,207 +81,207 @@ class DealModel
     /**
      * @var \DateTime
      */
-    private $nextActivityDate;
+    private $next_activity_date;
 
     /**
      * @var string
      */
-    private $nextActivityTime;
+    private $next_activity_time;
 
     /**
      * @var string
      */
-    private $nextActivityId;
+    private $next_activity_id;
 
     /**
      * @var string
      */
-    private $lastActivityId;
+    private $last_activity_id;
 
     /**
      * @var \DateTime
      */
-    private $lastActivityDate;
+    private $last_activity_date;
 
     /**
      * @var string
      */
-    private $lostReason;
+    private $lost_reason;
 
     /**
      * @var string
      */
-    private $visibleTo;
+    private $visible_to;
 
     /**
      * @var string
      */
-    private $closeTime;
+    private $close_time;
 
     /**
      * @var string
      */
-    private $pipelineId;
+    private $pipeline_id;
 
     /**
      * @var \DateTime
      */
-    private $wonTime;
+    private $won_time;
 
     /**
      * @var \DateTime
      */
-    private $firstWonTime;
+    private $first_won_time;
 
     /**
      * @var string
      */
-    private $productsCount;
+    private $products_count;
 
     /**
      * @var string
      */
-    private $filesCount;
+    private $files_count;
 
     /**
      * @var string
      */
-    private $notesCount;
+    private $notes_count;
 
     /**
      * @var string
      */
-    private $followersCount;
+    private $followers_count;
 
     /**
      * @var string
      */
-    private $emailMessagesCount;
+    private $email_messages_count;
 
     /**
      * @var string
      */
-    private $activitiesCount;
+    private $activities_count;
 
     /**
      * @var string
      */
-    private $doneActivitiesCount;
+    private $done_activities_count;
 
     /**
      * @var string
      */
-    private $undoneActivitiesCount;
+    private $undone_activities_count;
 
     /**
      * @var string
      */
-    private $referenceActivitiesCount;
+    private $reference_activities_count;
 
     /**
      * @var string
      */
-    private $participantsCount;
+    private $participants_count;
 
     /**
      * @var \DateTime
      */
-    private $expectedCloseDate;
+    private $expected_close_date;
 
     /**
      * @var string
      */
-    private $lastIncomingMailTime;
+    private $last_incoming_mail_time;
 
     /**
      * @var string
      */
-    private $lastOutgoingMailTime;
+    private $last_outgoing_mail_time;
 
     /**
      * @var string
      */
-    private $stageOrderNr;
+    private $stage_order_nr;
 
     /**
      * @var string
      */
-    private $personName;
+    private $person_name;
 
     /**
      * @var string
      */
-    private $orgName;
+    private $org_name;
 
     /**
      * @var string
      */
-    private $nextActivitySubject;
+    private $next_activity_subject;
 
     /**
      * @var string
      */
-    private $nextActivityType;
+    private $next_activity_type;
 
     /**
      * @var string
      */
-    private $nextActivityDuration;
+    private $next_activity_duration;
 
     /**
      * @var string
      */
-    private $nextActivityNote;
+    private $next_activity_note;
 
     /**
      * @var string
      */
-    private $formattedValue;
+    private $formatted_value;
 
     /**
      * @var string
      */
-    private $rottenTime;
+    private $rotten_time;
 
     /**
      * @var string
      */
-    private $weightedValue;
+    private $weighted_value;
 
     /**
      * @var string
      */
-    private $formattedWeightedValue;
+    private $formatted_weighted_value;
 
     /**
      * @var string
      */
-    private $ownerName;
+    private $owner_name;
 
     /**
      * @var string
      */
-    private $ccEmail;
+    private $cc_email;
 
     /**
      * @var boolean
      */
-    private $orgHidden;
+    private $org_hidden;
 
     /**
      * @var bool
      */
-    private $personHidden;
+    private $person_hidden;
 
     /**
      * @var string
      */
-    private $lastActivity;
+    private $last_activity;
 
     /**
      * @var string
      */
-    private $nextActivity;
+    private $next_activity;
 
     /**
      * @return string
@@ -304,18 +304,18 @@ class DealModel
     /**
      * @return string
      */
-    public function getCreatorUserId()
+    public function getCreatorUserid()
     {
-        return $this->creatorUserId;
+        return $this->creator_user_id;
     }
 
     /**
-     * @param string $creatorUserId
+     * @param string $creator_user_id
      * @return DealModel
      */
-    public function setCreatorUserId($creatorUserId)
+    public function setCreatorUserid($creator_user_id)
     {
-        $this->creatorUserId = $creatorUserId;
+        $this->creator_user_id = $creator_user_id;
         return $this;
     }
 
@@ -324,16 +324,16 @@ class DealModel
      */
     public function getUserId()
     {
-        return $this->userId;
+        return $this->user_id;
     }
 
     /**
-     * @param string $userId
+     * @param string $user_id
      * @return DealModel
      */
-    public function setUserId($userId)
+    public function setUserId($user_id)
     {
-        $this->userId = $userId;
+        $this->user_id = $user_id;
         return $this;
     }
 
@@ -342,16 +342,16 @@ class DealModel
      */
     public function getPersonId()
     {
-        return $this->personId;
+        return $this->person_id;
     }
 
     /**
-     * @param string $personId
+     * @param string $person_id
      * @return DealModel
      */
-    public function setPersonId($personId)
+    public function setPersonId($person_id)
     {
-        $this->personId = $personId;
+        $this->person_id = $person_id;
         return $this;
     }
 
@@ -360,16 +360,16 @@ class DealModel
      */
     public function getStageId()
     {
-        return $this->stageId;
+        return $this->stage_id;
     }
 
     /**
-     * @param string $stageId
+     * @param string $stage_id
      * @return DealModel
      */
-    public function setStageId($stageId)
+    public function setStageId($stage_id)
     {
-        $this->stageId = $stageId;
+        $this->stage_id = $stage_id;
         return $this;
     }
 
@@ -432,16 +432,16 @@ class DealModel
      */
     public function getAddTime()
     {
-        return $this->addTime;
+        return $this->add_time;
     }
 
     /**
-     * @param \DateTime $addTime
+     * @param \DateTime $add_time
      * @return DealModel
      */
-    public function setAddTime($addTime)
+    public function setAddTime($add_time)
     {
-        $this->addTime = $addTime;
+        $this->add_time = $add_time;
         return $this;
     }
 
@@ -450,34 +450,34 @@ class DealModel
      */
     public function getUpdateTime()
     {
-        return $this->updateTime;
+        return $this->update_time;
     }
 
     /**
-     * @param \DateTime $updateTime
+     * @param \DateTime $update_time
      * @return DealModel
      */
-    public function setUpdateTime($updateTime)
+    public function setUpdateTime($update_time)
     {
-        $this->updateTime = $updateTime;
+        $this->update_time = $update_time;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getStageChangeTime()
+    public function getStageChangetime()
     {
-        return $this->stageChangeTime;
+        return $this->stage_change_time;
     }
 
     /**
-     * @param string $stageChangeTime
+     * @param string $stage_change_time
      * @return DealModel
      */
-    public function setStageChangeTime($stageChangeTime)
+    public function setStageChangetime($stage_change_time)
     {
-        $this->stageChangeTime = $stageChangeTime;
+        $this->stage_change_time = $stage_change_time;
         return $this;
     }
 
@@ -538,90 +538,90 @@ class DealModel
     /**
      * @return \DateTime
      */
-    public function getNextActivityDate()
+    public function getNextActivitydate()
     {
-        return $this->nextActivityDate;
+        return $this->next_activity_date;
     }
 
     /**
-     * @param \DateTime $nextActivityDate
+     * @param \DateTime $next_activity_date
      * @return DealModel
      */
-    public function setNextActivityDate($nextActivityDate)
+    public function setNextActivitydate($next_activity_date)
     {
-        $this->nextActivityDate = $nextActivityDate;
+        $this->next_activity_date = $next_activity_date;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getNextActivityTime()
+    public function getNextActivitytime()
     {
-        return $this->nextActivityTime;
+        return $this->next_activity_time;
     }
 
     /**
-     * @param string $nextActivityTime
+     * @param string $next_activity_time
      * @return DealModel
      */
-    public function setNextActivityTime($nextActivityTime)
+    public function setNextActivitytime($next_activity_time)
     {
-        $this->nextActivityTime = $nextActivityTime;
+        $this->next_activity_time = $next_activity_time;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getNextActivityId()
+    public function getNextActivityid()
     {
-        return $this->nextActivityId;
+        return $this->next_activity_id;
     }
 
     /**
-     * @param string $nextActivityId
+     * @param string $next_activity_id
      * @return DealModel
      */
-    public function setNextActivityId($nextActivityId)
+    public function setNextActivityid($next_activity_id)
     {
-        $this->nextActivityId = $nextActivityId;
+        $this->next_activity_id = $next_activity_id;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getLastActivityId()
+    public function getLastActivityid()
     {
-        return $this->lastActivityId;
+        return $this->last_activity_id;
     }
 
     /**
-     * @param string $lastActivityId
+     * @param string $last_activity_id
      * @return DealModel
      */
-    public function setLastActivityId($lastActivityId)
+    public function setLastActivityid($last_activity_id)
     {
-        $this->lastActivityId = $lastActivityId;
+        $this->last_activity_id = $last_activity_id;
         return $this;
     }
 
     /**
      * @return \DateTime
      */
-    public function getLastActivityDate()
+    public function getLastActivitydate()
     {
-        return $this->lastActivityDate;
+        return $this->last_activity_date;
     }
 
     /**
-     * @param \DateTime $lastActivityDate
+     * @param \DateTime $last_activity_date
      * @return DealModel
      */
-    public function setLastActivityDate($lastActivityDate)
+    public function setLastActivitydate($last_activity_date)
     {
-        $this->lastActivityDate = $lastActivityDate;
+        $this->last_activity_date = $last_activity_date;
         return $this;
     }
 
@@ -630,16 +630,16 @@ class DealModel
      */
     public function getLostReason()
     {
-        return $this->lostReason;
+        return $this->lost_reason;
     }
 
     /**
-     * @param string $lostReason
+     * @param string $lost_reason
      * @return DealModel
      */
-    public function setLostReason($lostReason)
+    public function setLostReason($lost_reason)
     {
-        $this->lostReason = $lostReason;
+        $this->lost_reason = $lost_reason;
         return $this;
     }
 
@@ -648,16 +648,16 @@ class DealModel
      */
     public function getVisibleTo()
     {
-        return $this->visibleTo;
+        return $this->visible_to;
     }
 
     /**
-     * @param string $visibleTo
+     * @param string $visible_to
      * @return DealModel
      */
-    public function setVisibleTo($visibleTo)
+    public function setVisibleTo($visible_to)
     {
-        $this->visibleTo = $visibleTo;
+        $this->visible_to = $visible_to;
         return $this;
     }
 
@@ -666,16 +666,16 @@ class DealModel
      */
     public function getCloseTime()
     {
-        return $this->closeTime;
+        return $this->close_time;
     }
 
     /**
-     * @param string $closeTime
+     * @param string $close_time
      * @return DealModel
      */
-    public function setCloseTime($closeTime)
+    public function setCloseTime($close_time)
     {
-        $this->closeTime = $closeTime;
+        $this->close_time = $close_time;
         return $this;
     }
 
@@ -684,16 +684,16 @@ class DealModel
      */
     public function getPipelineId()
     {
-        return $this->pipelineId;
+        return $this->pipeline_id;
     }
 
     /**
-     * @param string $pipelineId
+     * @param string $pipeline_id
      * @return DealModel
      */
-    public function setPipelineId($pipelineId)
+    public function setPipelineId($pipeline_id)
     {
-        $this->pipelineId = $pipelineId;
+        $this->pipeline_id = $pipeline_id;
         return $this;
     }
 
@@ -702,34 +702,34 @@ class DealModel
      */
     public function getWonTime()
     {
-        return $this->wonTime;
+        return $this->won_time;
     }
 
     /**
-     * @param \DateTime $wonTime
+     * @param \DateTime $won_time
      * @return DealModel
      */
-    public function setWonTime($wonTime)
+    public function setWonTime($won_time)
     {
-        $this->wonTime = $wonTime;
+        $this->won_time = $won_time;
         return $this;
     }
 
     /**
      * @return \DateTime
      */
-    public function getFirstWonTime()
+    public function getFirstWontime()
     {
-        return $this->firstWonTime;
+        return $this->first_won_time;
     }
 
     /**
-     * @param \DateTime $firstWonTime
+     * @param \DateTime $first_won_time
      * @return DealModel
      */
-    public function setFirstWonTime($firstWonTime)
+    public function setFirstWontime($first_won_time)
     {
-        $this->firstWonTime = $firstWonTime;
+        $this->first_won_time = $first_won_time;
         return $this;
     }
 
@@ -738,16 +738,16 @@ class DealModel
      */
     public function getProductsCount()
     {
-        return $this->productsCount;
+        return $this->products_count;
     }
 
     /**
-     * @param string $productsCount
+     * @param string $products_count
      * @return DealModel
      */
-    public function setProductsCount($productsCount)
+    public function setProductsCount($products_count)
     {
-        $this->productsCount = $productsCount;
+        $this->products_count = $products_count;
         return $this;
     }
 
@@ -756,16 +756,16 @@ class DealModel
      */
     public function getFilesCount()
     {
-        return $this->filesCount;
+        return $this->files_count;
     }
 
     /**
-     * @param string $filesCount
+     * @param string $files_count
      * @return DealModel
      */
-    public function setFilesCount($filesCount)
+    public function setFilesCount($files_count)
     {
-        $this->filesCount = $filesCount;
+        $this->files_count = $files_count;
         return $this;
     }
 
@@ -774,16 +774,16 @@ class DealModel
      */
     public function getNotesCount()
     {
-        return $this->notesCount;
+        return $this->notes_count;
     }
 
     /**
-     * @param string $notesCount
+     * @param string $notes_count
      * @return DealModel
      */
-    public function setNotesCount($notesCount)
+    public function setNotesCount($notes_count)
     {
-        $this->notesCount = $notesCount;
+        $this->notes_count = $notes_count;
         return $this;
     }
 
@@ -792,34 +792,34 @@ class DealModel
      */
     public function getFollowersCount()
     {
-        return $this->followersCount;
+        return $this->followers_count;
     }
 
     /**
-     * @param string $followersCount
+     * @param string $followers_count
      * @return DealModel
      */
-    public function setFollowersCount($followersCount)
+    public function setFollowersCount($followers_count)
     {
-        $this->followersCount = $followersCount;
+        $this->followers_count = $followers_count;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getEmailMessagesCount()
+    public function getEmailMessagescount()
     {
-        return $this->emailMessagesCount;
+        return $this->email_messages_count;
     }
 
     /**
-     * @param string $emailMessagesCount
+     * @param string $email_messages_count
      * @return DealModel
      */
-    public function setEmailMessagesCount($emailMessagesCount)
+    public function setEmailMessagescount($email_messages_count)
     {
-        $this->emailMessagesCount = $emailMessagesCount;
+        $this->email_messages_count = $email_messages_count;
         return $this;
     }
 
@@ -828,70 +828,70 @@ class DealModel
      */
     public function getActivitiesCount()
     {
-        return $this->activitiesCount;
+        return $this->activities_count;
     }
 
     /**
-     * @param string $activitiesCount
+     * @param string $activities_count
      * @return DealModel
      */
-    public function setActivitiesCount($activitiesCount)
+    public function setActivitiesCount($activities_count)
     {
-        $this->activitiesCount = $activitiesCount;
+        $this->activities_count = $activities_count;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getDoneActivitiesCount()
+    public function getDoneActivitiescount()
     {
-        return $this->doneActivitiesCount;
+        return $this->done_activities_count;
     }
 
     /**
-     * @param string $doneActivitiesCount
+     * @param string $done_activities_count
      * @return DealModel
      */
-    public function setDoneActivitiesCount($doneActivitiesCount)
+    public function setDoneActivitiescount($done_activities_count)
     {
-        $this->doneActivitiesCount = $doneActivitiesCount;
+        $this->done_activities_count = $done_activities_count;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getUndoneActivitiesCount()
+    public function getUndoneActivitiescount()
     {
-        return $this->undoneActivitiesCount;
+        return $this->undone_activities_count;
     }
 
     /**
-     * @param string $undoneActivitiesCount
+     * @param string $undone_activities_count
      * @return DealModel
      */
-    public function setUndoneActivitiesCount($undoneActivitiesCount)
+    public function setUndoneActivitiescount($undone_activities_count)
     {
-        $this->undoneActivitiesCount = $undoneActivitiesCount;
+        $this->undone_activities_count = $undone_activities_count;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getReferenceActivitiesCount()
+    public function getReferenceActivitiescount()
     {
-        return $this->referenceActivitiesCount;
+        return $this->reference_activities_count;
     }
 
     /**
-     * @param string $referenceActivitiesCount
+     * @param string $reference_activities_count
      * @return DealModel
      */
-    public function setReferenceActivitiesCount($referenceActivitiesCount)
+    public function setReferenceActivitiescount($reference_activities_count)
     {
-        $this->referenceActivitiesCount = $referenceActivitiesCount;
+        $this->reference_activities_count = $reference_activities_count;
         return $this;
     }
 
@@ -900,88 +900,88 @@ class DealModel
      */
     public function getParticipantsCount()
     {
-        return $this->participantsCount;
+        return $this->participants_count;
     }
 
     /**
-     * @param string $participantsCount
+     * @param string $participants_count
      * @return DealModel
      */
-    public function setParticipantsCount($participantsCount)
+    public function setParticipantsCount($participants_count)
     {
-        $this->participantsCount = $participantsCount;
+        $this->participants_count = $participants_count;
         return $this;
     }
 
     /**
      * @return \DateTime
      */
-    public function getExpectedCloseDate()
+    public function getExpectedClosedate()
     {
-        return $this->expectedCloseDate;
+        return $this->expected_close_date;
     }
 
     /**
-     * @param \DateTime $expectedCloseDate
+     * @param \DateTime $expected_close_date
      * @return DealModel
      */
-    public function setExpectedCloseDate($expectedCloseDate)
+    public function setExpectedClosedate($expected_close_date)
     {
-        $this->expectedCloseDate = $expectedCloseDate;
+        $this->expected_close_date = $expected_close_date;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getLastIncomingMailTime()
+    public function getLastIncomingmailtime()
     {
-        return $this->lastIncomingMailTime;
+        return $this->last_incoming_mail_time;
     }
 
     /**
-     * @param string $lastIncomingMailTime
+     * @param string $last_incoming_mail_time
      * @return DealModel
      */
-    public function setLastIncomingMailTime($lastIncomingMailTime)
+    public function setLastIncomingmailtime($last_incoming_mail_time)
     {
-        $this->lastIncomingMailTime = $lastIncomingMailTime;
+        $this->last_incoming_mail_time = $last_incoming_mail_time;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getLastOutgoingMailTime()
+    public function getLastOutgoingmailtime()
     {
-        return $this->lastOutgoingMailTime;
+        return $this->last_outgoing_mail_time;
     }
 
     /**
-     * @param string $lastOutgoingMailTime
+     * @param string $last_outgoing_mail_time
      * @return DealModel
      */
-    public function setLastOutgoingMailTime($lastOutgoingMailTime)
+    public function setLastOutgoingmailtime($last_outgoing_mail_time)
     {
-        $this->lastOutgoingMailTime = $lastOutgoingMailTime;
+        $this->last_outgoing_mail_time = $last_outgoing_mail_time;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getStageOrderNr()
+    public function getStageOrdernr()
     {
-        return $this->stageOrderNr;
+        return $this->stage_order_nr;
     }
 
     /**
-     * @param string $stageOrderNr
+     * @param string $stage_order_nr
      * @return DealModel
      */
-    public function setStageOrderNr($stageOrderNr)
+    public function setStageOrdernr($stage_order_nr)
     {
-        $this->stageOrderNr = $stageOrderNr;
+        $this->stage_order_nr = $stage_order_nr;
         return $this;
     }
 
@@ -990,16 +990,16 @@ class DealModel
      */
     public function getPersonName()
     {
-        return $this->personName;
+        return $this->person_name;
     }
 
     /**
-     * @param string $personName
+     * @param string $person_name
      * @return DealModel
      */
-    public function setPersonName($personName)
+    public function setPersonName($person_name)
     {
-        $this->personName = $personName;
+        $this->person_name = $person_name;
         return $this;
     }
 
@@ -1008,88 +1008,88 @@ class DealModel
      */
     public function getOrgName()
     {
-        return $this->orgName;
+        return $this->org_name;
     }
 
     /**
-     * @param string $orgName
+     * @param string $org_name
      * @return DealModel
      */
-    public function setOrgName($orgName)
+    public function setOrgName($org_name)
     {
-        $this->orgName = $orgName;
+        $this->org_name = $org_name;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getNextActivitySubject()
+    public function getNextActivitysubject()
     {
-        return $this->nextActivitySubject;
+        return $this->next_activity_subject;
     }
 
     /**
-     * @param string $nextActivitySubject
+     * @param string $next_activity_subject
      * @return DealModel
      */
-    public function setNextActivitySubject($nextActivitySubject)
+    public function setNextActivitysubject($next_activity_subject)
     {
-        $this->nextActivitySubject = $nextActivitySubject;
+        $this->next_activity_subject = $next_activity_subject;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getNextActivityType()
+    public function getNextActivitytype()
     {
-        return $this->nextActivityType;
+        return $this->next_activity_type;
     }
 
     /**
-     * @param string $nextActivityType
+     * @param string $next_activity_type
      * @return DealModel
      */
-    public function setNextActivityType($nextActivityType)
+    public function setNextActivitytype($next_activity_type)
     {
-        $this->nextActivityType = $nextActivityType;
+        $this->next_activity_type = $next_activity_type;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getNextActivityDuration()
+    public function getNextActivityduration()
     {
-        return $this->nextActivityDuration;
+        return $this->next_activity_duration;
     }
 
     /**
-     * @param string $nextActivityDuration
+     * @param string $next_activity_duration
      * @return DealModel
      */
-    public function setNextActivityDuration($nextActivityDuration)
+    public function setNextActivityduration($next_activity_duration)
     {
-        $this->nextActivityDuration = $nextActivityDuration;
+        $this->next_activity_duration = $next_activity_duration;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getNextActivityNote()
+    public function getNextActivitynote()
     {
-        return $this->nextActivityNote;
+        return $this->next_activity_note;
     }
 
     /**
-     * @param string $nextActivityNote
+     * @param string $next_activity_note
      * @return DealModel
      */
-    public function setNextActivityNote($nextActivityNote)
+    public function setNextActivitynote($next_activity_note)
     {
-        $this->nextActivityNote = $nextActivityNote;
+        $this->next_activity_note = $next_activity_note;
         return $this;
     }
 
@@ -1098,16 +1098,16 @@ class DealModel
      */
     public function getFormattedValue()
     {
-        return $this->formattedValue;
+        return $this->formatted_value;
     }
 
     /**
-     * @param string $formattedValue
+     * @param string $formatted_value
      * @return DealModel
      */
-    public function setFormattedValue($formattedValue)
+    public function setFormattedValue($formatted_value)
     {
-        $this->formattedValue = $formattedValue;
+        $this->formatted_value = $formatted_value;
         return $this;
     }
 
@@ -1116,16 +1116,16 @@ class DealModel
      */
     public function getRottenTime()
     {
-        return $this->rottenTime;
+        return $this->rotten_time;
     }
 
     /**
-     * @param string $rottenTime
+     * @param string $rotten_time
      * @return DealModel
      */
-    public function setRottenTime($rottenTime)
+    public function setRottenTime($rotten_time)
     {
-        $this->rottenTime = $rottenTime;
+        $this->rotten_time = $rotten_time;
         return $this;
     }
 
@@ -1134,34 +1134,34 @@ class DealModel
      */
     public function getWeightedValue()
     {
-        return $this->weightedValue;
+        return $this->weighted_value;
     }
 
     /**
-     * @param string $weightedValue
+     * @param string $weighted_value
      * @return DealModel
      */
-    public function setWeightedValue($weightedValue)
+    public function setWeightedValue($weighted_value)
     {
-        $this->weightedValue = $weightedValue;
+        $this->weighted_value = $weighted_value;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getFormattedWeightedValue()
+    public function getFormattedWeightedvalue()
     {
-        return $this->formattedWeightedValue;
+        return $this->formatted_weighted_value;
     }
 
     /**
-     * @param string $formattedWeightedValue
+     * @param string $formatted_weighted_value
      * @return DealModel
      */
-    public function setFormattedWeightedValue($formattedWeightedValue)
+    public function setFormattedWeightedvalue($formatted_weighted_value)
     {
-        $this->formattedWeightedValue = $formattedWeightedValue;
+        $this->formatted_weighted_value = $formatted_weighted_value;
         return $this;
     }
 
@@ -1170,16 +1170,16 @@ class DealModel
      */
     public function getOwnerName()
     {
-        return $this->ownerName;
+        return $this->owner_name;
     }
 
     /**
-     * @param string $ownerName
+     * @param string $owner_name
      * @return DealModel
      */
-    public function setOwnerName($ownerName)
+    public function setOwnerName($owner_name)
     {
-        $this->ownerName = $ownerName;
+        $this->owner_name = $owner_name;
         return $this;
     }
 
@@ -1188,16 +1188,16 @@ class DealModel
      */
     public function getCcEmail()
     {
-        return $this->ccEmail;
+        return $this->cc_email;
     }
 
     /**
-     * @param string $ccEmail
+     * @param string $cc_email
      * @return DealModel
      */
-    public function setCcEmail($ccEmail)
+    public function setCcEmail($cc_email)
     {
-        $this->ccEmail = $ccEmail;
+        $this->cc_email = $cc_email;
         return $this;
     }
 
@@ -1206,16 +1206,16 @@ class DealModel
      */
     public function isOrgHidden()
     {
-        return $this->orgHidden;
+        return $this->org_hidden;
     }
 
     /**
-     * @param bool $orgHidden
+     * @param bool $org_hidden
      * @return DealModel
      */
-    public function setOrgHidden($orgHidden)
+    public function setOrgHidden($org_hidden)
     {
-        $this->orgHidden = $orgHidden;
+        $this->org_hidden = $org_hidden;
         return $this;
     }
 
@@ -1224,16 +1224,16 @@ class DealModel
      */
     public function isPersonHidden()
     {
-        return $this->personHidden;
+        return $this->person_hidden;
     }
 
     /**
-     * @param bool $personHidden
+     * @param bool $person_hidden
      * @return DealModel
      */
-    public function setPersonHidden($personHidden)
+    public function setPersonHidden($person_hidden)
     {
-        $this->personHidden = $personHidden;
+        $this->person_hidden = $person_hidden;
         return $this;
     }
 
@@ -1242,16 +1242,16 @@ class DealModel
      */
     public function getLastActivity()
     {
-        return $this->lastActivity;
+        return $this->last_activity;
     }
 
     /**
-     * @param string $lastActivity
+     * @param string $last_activity
      * @return DealModel
      */
-    public function setLastActivity($lastActivity)
+    public function setLastActivity($last_activity)
     {
-        $this->lastActivity = $lastActivity;
+        $this->last_activity = $last_activity;
         return $this;
     }
 
@@ -1260,16 +1260,16 @@ class DealModel
      */
     public function getNextActivity()
     {
-        return $this->nextActivity;
+        return $this->next_activity;
     }
 
     /**
-     * @param string $nextActivity
+     * @param string $next_activity
      * @return DealModel
      */
-    public function setNextActivity($nextActivity)
+    public function setNextActivity($next_activity)
     {
-        $this->nextActivity = $nextActivity;
+        $this->next_activity = $next_activity;
         return $this;
     }
 

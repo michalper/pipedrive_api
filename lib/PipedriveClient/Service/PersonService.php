@@ -2,6 +2,7 @@
 
 namespace PipedriveClient\Service;
 
+use PipedriveClient\Model\DealModel;
 use PipedriveClient\Model\Request\PersonRequest;
 use Itav\Component\Serializer\Serializer;
 use PipedriveClient\Model\Response\PersonResponse;
@@ -115,6 +116,43 @@ class PersonService implements InterfaceService
             $ret = [];
             foreach ($persons as $key => $person) {
                 $test = new PersonResponse();
+                foreach ($person as $k => $v) {
+                    $test->addProp($k, $v);
+                }
+                $ret[$key] = $test;
+            }
+            return $ret;
+        }
+        return [];
+    }
+
+    /**
+     * @param integer $idPerson
+     * @param int $start
+     * @param bool|integer $limit
+     * @return DealModel[]
+     */
+    public function getPersonDeals($idPerson, $start = 0, $limit = false)
+    {
+        $params = [];
+
+        if ($start) {
+            $params['start'] = $start;
+        }
+
+        if ($limit) {
+            $params['limit'] = $limit;
+        }
+
+        $ret = $this->service
+            ->setRequestMethod(Service::REQUEST_METHOD_GET)
+            ->setGetParams($params)
+            ->request('persons/' . $idPerson . '/deals');
+
+        if ($deals = $ret->getData()) {
+            $ret = [];
+            foreach ($deals as $key => $person) {
+                $test = new DealModel();
                 foreach ($person as $k => $v) {
                     $test->addProp($k, $v);
                 }
