@@ -61,6 +61,7 @@ class DealService implements InterfaceService
         $ret = $this->service
             ->setRequestMethod(Service::REQUEST_METHOD_POST)
             ->setPostData($this->serializer->normalize($dealModel))
+            ->setDynamicData(json_decode(json_encode($dealModel), true))
             ->request('deals');
 
         if ($ret->getData()) {
