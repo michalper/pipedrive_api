@@ -7,6 +7,7 @@ use PipedriveClient\Service\DealService;
 use PipedriveClient\Service\NoteService;
 use PipedriveClient\Service\PersonService;
 use PipedriveClient\Service\PipelineService;
+use PipedriveClient\Service\SearchResultService;
 use PipedriveClient\Service\Service;
 use PipedriveClient\Service\StageService;
 use PipedriveClient\Service\UserSettingsService;
@@ -56,6 +57,11 @@ class PipedriveClient
     public $pipelines;
 
     /**
+     * @var SearchResultService
+     */
+    public $search;
+
+    /**
      * @var StageService
      */
     public $stages;
@@ -82,6 +88,7 @@ class PipedriveClient
         $this->notes = new NoteService($this->service, $this->serializer);
         $this->persons = new PersonService($this->service, $this->serializer);
         $this->pipelines = new PipelineService($this->service, $this->serializer);
+        $this->search = new SearchResultService($this->service, $this->serializer);
         $this->stages = new StageService($this->service, $this->serializer);
         $this->userSettings = new UserSettingsService($this->service, $this->serializer);
         $this->webhooks = new WebhookService($this->service, $this->serializer);
