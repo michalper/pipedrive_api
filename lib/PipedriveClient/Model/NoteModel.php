@@ -94,6 +94,11 @@ class NoteModel
     private $user;
 
     /**
+     * @var array
+     */
+    private $additionalData;
+
+    /**
      * @return string
      */
     public function getId()
@@ -396,6 +401,47 @@ class NoteModel
     public function setUser($user)
     {
         $this->user = $user;
+        return $this;
+    }
+
+    /**
+     * @param string $key
+     * @param string $value
+     * @return NoteModel
+     */
+    public function addProp($key, $value)
+    {
+        $this->{$key} = $value;
+        return $this;
+    }
+
+    /**
+     * @param string $key
+     * @return mixed
+     */
+    public function getProp($key)
+    {
+        if (isset($this->{$key})) {
+            return $this->{$key};
+        }
+        return false;
+    }
+
+    /**
+     * @return array
+     */
+    public function getAdditionalData()
+    {
+        return $this->additionalData;
+    }
+
+    /**
+     * @param array $additionalData
+     * @return NoteModel
+     */
+    public function setAdditionalData($additionalData)
+    {
+        $this->additionalData = $additionalData;
         return $this;
     }
 }

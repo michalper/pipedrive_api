@@ -284,6 +284,11 @@ class DealModel
     private $next_activity;
 
     /**
+     * @var array
+     */
+    private $additionalData;
+
+    /**
      * @return string
      */
     public function getId()
@@ -1294,5 +1299,23 @@ class DealModel
             return $this->{$key};
         }
         return false;
+    }
+
+    /**
+     * @return array
+     */
+    public function getAdditionalData()
+    {
+        return $this->additionalData;
+    }
+
+    /**
+     * @param array $additionalData
+     * @return DealModel
+     */
+    public function setAdditionalData($additionalData)
+    {
+        $this->additionalData = $additionalData;
+        return $this;
     }
 }

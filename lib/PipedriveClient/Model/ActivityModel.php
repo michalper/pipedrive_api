@@ -164,6 +164,11 @@ class ActivityModel
     private $noGcal;
 
     /**
+     * @var array
+     */
+    private $additionalData;
+
+    /**
      * @return string
      */
     public function getId()
@@ -718,6 +723,47 @@ class ActivityModel
     public function setNoGcal($noGcal)
     {
         $this->noGcal = $noGcal;
+        return $this;
+    }
+
+    /**
+     * @param string $key
+     * @param string $value
+     * @return ActivityModel
+     */
+    public function addProp($key, $value)
+    {
+        $this->{$key} = $value;
+        return $this;
+    }
+
+    /**
+     * @param string $key
+     * @return mixed
+     */
+    public function getProp($key)
+    {
+        if (isset($this->{$key})) {
+            return $this->{$key};
+        }
+        return false;
+    }
+
+    /**
+     * @return array
+     */
+    public function getAdditionalData()
+    {
+        return $this->additionalData;
+    }
+
+    /**
+     * @param array $additionalData
+     * @return ActivityModel
+     */
+    public function setAdditionalData($additionalData)
+    {
+        $this->additionalData = $additionalData;
         return $this;
     }
 }
