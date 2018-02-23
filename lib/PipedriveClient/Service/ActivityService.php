@@ -34,15 +34,18 @@ class ActivityService implements InterfaceService
     }
 
     /**
-     * @param ActivityModel $activityModel
      * @see https://developers.pipedrive.com/docs/api/v1/#!/Activities/post_activities
-     * @return boolean|ActivityModel
+     * @param ActivityModel $activityModel
+     * @return bool|mixed
+     * @throws \Exception
+     * @throws \Itav\Component\Serializer\SerializerException
      */
     public function add(ActivityModel $activityModel)
     {
         $ret = $this->service
             ->setRequestMethod(Service::REQUEST_METHOD_POST)
             ->setPostData($this->serializer->normalize($activityModel))
+            ->setDynamicData(json_decode(json_encode($activityModel), true))
             ->request('activities');
 
         if ($ret->getData()) {

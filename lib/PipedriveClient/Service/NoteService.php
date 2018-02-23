@@ -52,15 +52,18 @@ class NoteService implements InterfaceService
     }
 
     /**
-     * @param NoteModel $noteModel
      * @see https://developers.pipedrive.com/docs/api/v1/#!/Notes/post_notes
-     * @return boolean|NoteModel
+     * @param NoteModel $noteModel
+     * @return bool|mixed
+     * @throws \Exception
+     * @throws \Itav\Component\Serializer\SerializerException
      */
     public function add(NoteModel $noteModel)
     {
         $ret = $this->service
             ->setRequestMethod(Service::REQUEST_METHOD_POST)
             ->setPostData($this->serializer->normalize($noteModel))
+            ->setDynamicData(json_decode(json_encode($noteModel), true))
             ->request('notes');
 
         if ($ret->getData()) {
