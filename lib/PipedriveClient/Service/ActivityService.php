@@ -42,10 +42,12 @@ class ActivityService implements InterfaceService
      */
     public function add(ActivityModel $activityModel)
     {
+        $additionalData = $activityModel->getAdditionalData();
+        $activityModel->setAdditionalData(null);
         $ret = $this->service
             ->setRequestMethod(Service::REQUEST_METHOD_POST)
             ->setPostData($this->serializer->normalize($activityModel))
-            ->setDynamicData(json_decode(json_encode($activityModel), true))
+            ->setDynamicData(json_decode(json_encode($additionalData), true))
             ->request('activities');
 
         if ($ret->getData()) {

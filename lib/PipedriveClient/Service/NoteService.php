@@ -60,10 +60,12 @@ class NoteService implements InterfaceService
      */
     public function add(NoteModel $noteModel)
     {
+        $additionalData = $noteModel->getAdditionalData();
+        $noteModel->setAdditionalData(null);
         $ret = $this->service
             ->setRequestMethod(Service::REQUEST_METHOD_POST)
             ->setPostData($this->serializer->normalize($noteModel))
-            ->setDynamicData(json_decode(json_encode($noteModel), true))
+            ->setDynamicData(json_decode(json_encode($additionalData), true))
             ->request('notes');
 
         if ($ret->getData()) {
